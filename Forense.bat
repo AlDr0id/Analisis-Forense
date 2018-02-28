@@ -205,7 +205,7 @@ echo ############################### INICIO DE RECOLECCION DE DATOS NO VOLATILES
 
 
 echo Obtencion de imagen del disco
-Forense\FTKImager\FTKImager.exe
+FTKImager\FTKImager.exe
 
 
 echo Obtencion del MBR
