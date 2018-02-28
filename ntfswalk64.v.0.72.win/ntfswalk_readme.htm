@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TZWorks Windows $MFT and NTFS Metadata Extractor Tool (ntfswalk) Readme </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+        .indent { margin-left: 1em; }
+        .blue_heading
+        {
+        	font-family:"Cambria","serif";
+        	color:#1F5C99;
+        	font-weight: bold;
+        	font-style: italic;
+        }
+        .left { text-align:left; }
+        .center { text-align:center;  }
+        .right { text-align: right; }
+        .largefont  { font-size:2em; line-height:1.2em; }
+        .mediumfont { font-size:1.5em; line-height:1.2em; }
+        .smallfont { font-size:0.8em; line-height:1.2em; }
+        .verysmallfont{font-size:0.65em; line-height:1.2em;}
+        .subheadingfont{font-size:0.65em; line-height:2.0em;}
+        .linecolor {border-color:#4F81BD; background-color:#4F81BD; height:2px; border:none; }
+        .red-text { color: red; }
+        .blue-text { color: blue; }
+        .green-text { color: blue; }
+        .back_to_top{ font-size: 12px; }      
+        .lightblue {color: #4F81BD; }
+        .italic{font-style: italic;}
+        .tool{font-style: italic; font-weight: bold;}
+        .option{font-style: italic; color: red;}
+        
+        .footer {
+            text-align: right;
+            font-family: "Cambria","serif";
+            color: #1F5C99;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 8.0pt;
+            line-height: 1.2em;
+            letter-spacing: .75pt;
+        } 
+        
+        table {margin-left:auto; margin-right:auto; border-spacing: 0; border: 1px solid #555; border: 1px; padding: 2px;}
+        th {border: 1px solid #555; padding: 2px; }
+        table tr:first-child { background-color: yellow; }
+        table td { padding: 4px; border: 1px solid #555; }
+        ul { list-style: square; }
+        h2 { display: block; }
+        /*
+        span { font-size: 16px; }     
+        pre { font-size: 16px; }  
+        */       
+    </style>
+</head>
+<body>
+
+<!-- TZWorks banner -->
+<div class="blue_heading left">
+<p><span class="largefont"> TZWorks LLC</span><br />
+System Programming and Consulting<br /> 
+<span class="smallfont"><a href="https://tzworks.net"  target="_blank">www.tzworks.net</a></span></p>
+<hr  class="linecolor"/>
+</div>
+
+<!-- Document Title -->
+<div class="blue_heading center mediumfont"><a id="index">
+TZWorks<sup>&reg;</sup><br />
+Windows $MFT and NTFS Metadata Extractor Tool - ntfswalk</a></div>
+<div class="blue_heading center"><p>(Version 0.72)</p></div>
+
+<h3 class="center red-text">WARNING:<br />
+Do NOT modify this file in any way OR rename the file. <br />
+Doing so will invalidate the binary authentication.</h3> <br />
+
+<hr />
+
+<ul>
+    <li> <a href="#eula"> Information about our End User's License Agreements (EULAs) </a></li>
+
+    <li> <a href="#about"> About the <span class="tool">ntfswalk</span> Tool </a></li>
+    <li> <a href="#howto">How to use this Tool</a>
+    <ul>
+        <li> <a href="#datasrc">Source of Data</a></li>
+        <li> <a href="#filtering">Filtering Options</a></li>
+        <li> <a href="#extraction">Extraction Options</a></li>
+        <li> <a href="#formatting">Format Options</a></li>
+        <li> <a href="#general">General Purpose Options</a></li>
+        <li> <a href="#examples">Examples</a></li>
+    </ul></li>
+    <li> <a href="#csv_defns">CSV field definitions</a></li>
+    <li> <a href="#issues">Known Issues</a></li>
+    <li> <a href="#auth"> Authentication and License File </a></li>
+    <li> <a href="#version_history"> Version history </a></li>
+    <li> <a href="#references"> References </a></li>
+    <!--USERGUIDE_LINK_TAG-->
+    <li> <a href="https://tzworks.net/prototypes/ntfswalk/ntfswalk.users.guide.pdf" target="_blank"> User's Guide (PDF version) </a></li>
+</ul>
+
+<hr/><!-- EULA -->
+<h2><a id="eula">Information about our End User's License Agreements (EULAs) </a><br />
+<span class="verysmallfont">for software on TZWorks, LLC Website <a href="http://www.tzworks.net">www.tzworks.net</a></span></h2>
+
+<h3>Terms and Conditions Varies Depending on Licencse Type</h3>
+<div>
+<p>TZWorks LLC software and related documentation (&quot;Software&quot;) 
+is governed by separate licenses issued from TZWorks LLC. 
+The User Agreement, Disclaimer, and/or Software may change from time to time.  
+By continuing to use the Software after those changes become 
+effective, you agree to be bound by all such changes.   
+
+There are 3 categories of licenses available: 
+(i) for <i><span class="red-text">educational</span></i> purposes, 
+(ii) for <i><span class="red-text">demonstration and testing</span></i> purposes and 
+(iii) <i><span class="red-text">business and/or commercial</span></i> purposes. 
+
+Contact TZWorks LLC 
+(<a href="mailto:info@tzworks.net">info&#64;tzworks.net</a>) for more information regarding 
+licensing and/or to obtain a license. To redistribute the Software, prior approval in writing 
+is required from TZWorks LLC.  Depending on the license type you have, the terms in the license
+does not give the user any rights in intellectual 
+property or technology, but only a limited right to use the Software in accordance with the
+license issued to you.  TZWorks LLC retains all rights to ownership of this Software.</p>
+</div>
+
+<h3>Export Regulation</h3>
+<p>The Software is subject to U.S. export control laws, including the U.S. Export Administration 
+Act and its associated regulations. The Export Control Classification Number (ECCN) for our 
+Software is 5D002, subparagraph C.1. Therefore, any request for a license 
+requires TZWorks to ensure the end user is not restricted from the U.S. Export Administration
+Act and its associated regulations.  For this reason, all requests for licensing need to have the end user's
+business contact information as part of the request. </p>
+
+<h3>Disclaimer</h3>
+<div>
+<p>The user agrees that all Software made available on the Website is experimental in nature 
+and use of Website and Software is at user's sole risk.  The Software could include technical 
+inaccuracies or errors.  Changes are periodically added to the information herein, and TZWorks, 
+LLC may make improvements and/or changes to Software at any time.  TZWorks, LLC makes no 
+representations about the accuracy or usability of the Software and/or Website for any purpose.</p>
+
+<p>ALL SOFTWARE ARE PROVIDED &quot;AS IS&quot; AND &quot;WHERE IS&quot; WITHOUT WARRANTY 
+OF ANY KIND INCLUDING ALL IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS 
+FOR ANY PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.  IN NO EVENT SHALL TZWORKS, LLC 
+BE LIABLE FOR ANY KIND OF DAMAGE RESULTING FROM ANY CAUSE OR REASON, ARISING OUT OF IT 
+IN CONNECTION WITH THE USE OR PERFORMANCE OF INFORMATION AVAILABLE FROM THIS WEBSITE. </p>
+</div>
+
+<h3>Privacy Policy</h3> 
+<div>
+<p>When you use the Website or download the Software, we automatically record information regarding 
+your activity using the Website.  This may include the Internet Protocol (&quot;IP&quot;) address and date 
+and time stamps associated with transactions.  Personal information and identifiable data is only 
+collected if you supply it to TZWorks, LLC by posting a comment on the Website or submitting an 
+email.  We do not disclose any personally identifiable information without your permission unless 
+we are legally entitled or required to do so or if we believe that such action is necessary to 
+protect and/or defend our rights, property or personal safety and those of our users/customers.</p>
+</div>
+
+<h3>Security</h3>
+<div>
+<p>The Website has security measures in place to protect the loss, misuse, and/or alteration of 
+information under our control. The data resides behind a firewall, with access restricted to 
+authorized TZWorks, LLC personnel.  If you believe the Website and or its software has been misused 
+or has had a security breach please email <a href="mailto:info@tzworks.net">info&#64;tzworks.net</a>.  
+We will not be responsible for such misuse and not guarantee that we will rectify any such security breach. </p>
+</div>
+
+<h3>Removal</h3>
+<div>
+<p>The Website and Software are the original works of TZWorks, LLC.  However, to be in compliance with 
+the Digital Millennium Copyright Act of 1998 (&quot;DMCA&quot;) we agree to investigate and disable any 
+material for infringement of copyright. Contact TZWorks, LLC at email address: 
+<a href="mailto:info@tzworks.net">info&#64;tzworks.net</a>, regarding any DMCA concerns. </p>
+</div>
+
+
+
+<hr/><!--- About the ntfswalk Tool -->
+<h2><a id="about">About the <em>ntfswalk</em> Tool</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<p><span class="tool">ntfswalk</span> is a command line tool that traverses a specified NTFS 
+volume reading all MFT entries and pulling predefined statistics as it runs. </p> 
+
+<p>Originally the engine was designed as a widget for other prototypes to help 
+pull data out from targeted categories of files on NTFS partitions.  After 
+successfully using the functionality in other tools, it was determined making 
+a standalone tool would be helpful in debugging and 
+understanding the internals of any NTFS volume. This new tool, coined 
+<span class="tool">ntfswalk</span>, is named after its ability to walk an entire NTFS volume 
+and output each MFT entry it encounters.</p>
+
+<p>Designed to work with live NTFS partitions, there is also functionality for 
+traversing NTFS images created with the 'dd' utility (as well as some versions 
+of VMWare VMDK files). There are options to filter on file extension, timestamp 
+range, binary signature, partial filenames and directory contents. For the 
+files found, one can list the summary metadata, extract the header bytes, 
+or extract the entire file contents into a designated directory. Since the 
+engine is Windows API agnostic, there are compiled versions for Windows, Linux, 
+and Mac OS X.</p>
+
+<p>To use this tool, an authentication file is required to be in the same 
+directory as the binary in order for the tool to run.</p>
+</div>
+
+<hr/><!-- How to use this Tool -->
+<h2><a id="howto">How to use this Tool</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<p><span class="tool">ntfswalk</span> has a number of command line switches, and for the 
+occasional user, it can be confusing which options can be used together and 
+which cannot.</p>
+
+<p>One can display the menu options by typing in the executable name 
+without parameters.  Below is the menu with the various options.</p>
+     ntfswalk -partition &lt;drive letter&gt; [options]
+
+<pre>
+    ntfswalk - full ver: 0.72; Copyright (c) TZWorks LLC
+
+    usage:
+
+     Running 'ntfswalk' on an extracted $MFT file
+      ntfswalk -mftfile &lt;name&gt; [-opts]        = source is extract $MFT file
+
+     Running 'ntfswalk' on a disk/partition image captured w/ a 'dd' type tool
+      ntfswalk -image &lt;file&gt; [-offset &lt;vol&gt;]  = dd image
+
+     Running 'ntfswalk' on a VMWare monolithic virtual volume
+      -vmdk "disk1 | disk2 | ..."             = VMWare VMDK disk(s)
+
+     Running 'ntfswalk' on a live volume
+      ntfswalk -partition &lt;drv letter&gt; [opts]   
+      ntfswalk -drivenum &lt;#&gt; [-offset &lt;vol&gt;]  = *** Disk# that is mounted
+      ntfswalk -vss &lt;num&gt;  [options]          = *** Volume Shadow parse
+
+     Filter 'OR' logic options
+      -filter_ext "ext1 | ext2 | ..."         = extract using exts
+      -filter_name "name1 | name2 | ..."      = extract using partial names
+      -filter_fullname "name1 | name2 | ..."  = extract using full names
+      -filter_dir "dir1 | dir2 | ..."         = extract using dirs
+      -filter_file "path/file1 | ..."         = extract specified files
+      -filter_dir_inode "inode1 | inode2 .."  = extract using dir inodes
+      -filter_inode "inode1 | inode2 | ..."   = extract specified inodes
+      -filter_sig "mz | hive | evt | sqlite"  = extract using signatures
+      -filter_max_size &lt;size&gt;                 = extract if doesn't exceed size
+
+     Filter 'AND' logic options
+      -filter_start_time &lt;date time&gt;          = format "mm/dd/yyyy hh:mm:ss"
+      -filter_stop_time &lt;date time&gt;           = format "mm/dd/yyyy hh:mm:ss"
+      -filter_deleted_files                   = analyzes only filerecs in $MFT
+      -filter_deleted_files_all               = analyzes both $MFT and unalloc
+      -filter_unalloc_clusters                = analyze unallocated clusters
+      -filter_all_clusters                    = analyze $MFT & unalloc clusters
+
+     Extraction options
+      -action_copy_files &lt;dir&gt; [-raw]         = extract file into dir
+             [-raw]                           = incl slack & skip sparse clusters
+             [-skip_sparse_clusters]          = don't incl sparse clusters
+      -action_include_header                  = extracts 0x20 bytes from file
+      -action_include_clusterinfo             = show cluster info
+
+     Results file format options
+      -csv                                    = csv format, has most output
+      -csvl2t                                 = log2timeline format
+      -bodyfile                               = bodyfile format
+      -csvperpath                             = only one csv entry/pathfile
+      -hashfile  "md5 | sha1"                 = *** output hashfile format
+
+     General purpose options
+      -out &lt;results file&gt;                     = output results to this file
+      -hide_dos_fntimes                       = don't include dos 8.3 fn time
+      -hostname &lt;name&gt;                        = output hostname
+      -base10                                 = use base10 vice hex 
+      -use_orig_ext                           = only for [-action_copy_files]
+      -script &lt;file&gt;                          = use file to express options
+      -mftstart &lt;value&gt; [-mftrange &lt;value&gt;]   = only process these inodes
+      -filerecord_offset                      = output the offset of the filerec
+      -quiet                                  = supress progress during run
+      -dateformat yyyy/mm/dd                  = "mm/dd/yyyy" is the default
+      -timeformat hh:mm:ss                    = "hh:mm:ss.xxx" is the default
+      -pair_datetime                          = *** combine date/time into 1 field
+      -no_whitespace                          = remove whitespace between delims
+      -csv_separator "|"                      = use a pipe char for separator
+
+     Experimental option [split processing into multiple instances]
+      -cpu &lt;#instances&gt; -out &lt;file&gt; = *** merge instances into 1 file
+             [-tempdir &lt;folder&gt;]    = use this temp dir for file merge
+             [-separate_files]      = don't merge; each instance is separate file
+</pre>
+
+<p> The architecture can be broken up into four main areas:
+(a) source of the data, (b) filter that can be applied, (c) extraction options,
+and (d) output format. </p>
+</div>
+
+<hr/><!-- Source of Data -->
+<h2><a id="datasrc">Source of Data</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<p>Starting with the 'source of the data', <span class="tool">ntfswalk</span> can handle
+various types: (a) an $MFT extracted file, (b) a 'dd' image of a drive or volume,
+(c) a drive or volume currently mounted or (d) a VMWare monolithic NTFS formatted 
+disk. The options available and their syntax are:</p>
+
+<table>
+    <tr>
+        <th>Option</th>
+        <th>Extra</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>-mftfile</td>
+        <td></td>
+        <td>Assuming one has an $MFT file that has been copied from a volume, one can analyze the file.  
+        The syntax is:
+        <span class="option">-mftfile &lt;extracted $MFT file&gt;</span>.</td>
+    </tr>
+    <tr>
+        <td>-image </td>
+        <td></td>
+        <td> Extract artifacts from a volume specified by an image and volume offset. The syntax is 
+        <span class="option">-image &lt;filename&gt; -offset &lt;volume offset&gt;</span></td>
+    </tr>
+    <tr>
+        <td>-drivenum</td>
+        <td></td>
+        <td> Extract artifacts from a mounted disk specified by a drive number and volume offset. The syntax is 
+        <span class="option">-drivenum &lt;#&gt; -offset &lt;volume offset&gt;</span></td>
+    </tr>
+    <tr>
+        <td>-partition</td>
+        <td></td>
+        <td> Extract artifacts from a mounted Windows volume. The syntax is 
+        <span class="option">-partition &lt;drive letter&gt;</span>.</td>
+    </tr>
+    <tr>
+        <td>-vmdk </td>
+        <td>**</td>
+        <td> Extract artifacts from a VMWare monolithic NTFS formatted volume. The syntax is 
+        <span class="option">-vmdk &lt;disk name&gt;</span>.  For a collection
+        of VMWare disks that include snapshots, one can use the following syntax: 
+         <span class="option">-vmdk "disk1 | disk2 | ..."</span></td>
+    </tr>
+    <tr>
+        <td>-vss</td>
+        <td>***</td>
+        <td> Experimental.  Extract artifacts from Volume Shadow. The syntax is 
+        <span class="option">-vss &lt;index number of shadow copy&gt;</span>.
+        Only applies to Windows Vista, Win7, Win8 and beyond. Does not apply to Windows XP.</td>
+    </tr>
+</table>
+
+<p>The options labeled as 'Extra' require a separate license for them to be unlocked.</p>
+
+</div>
+
+<hr/><!-- Filtering Options -->
+<h2><a id="filtering">Filtering Options</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<p>The second area is filtering.  This defines what files (or MFT entries) are 
+analyzed and displayed to the user.  One can filter by deleted files/folders, 
+by various extensions, multiple partial names, and/or binary signatures.  
+Also in this area, one can choose to analyze all 'unallocated clusters' instead 
+of the normal 'allocated clusters', or to pull files from a specified directory.  
+For binary signatures, currently <span class="tool">ntfswalk</span> allows one to find:  
+registry hives, event logs, or portable executable files. The options available,
+and their syntax, are:</p>
+
+<table>
+    <tr>
+        <th>Option</th>
+        <th>Extra</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>-filter_ext</td>
+        <td></td>
+        <td>Filter on one or more extensions.  The syntax is: 
+        <span class="option">-filter_ext "&lt;ext1&gt; | "&lt;ext2&gt; | ..."</span>.</td>
+    </tr>
+    <tr>
+        <td>-filter_name</td>
+        <td></td>
+        <td>Filter on one or more <em>partial</em> names (case insensitive). The syntax is: 
+        <span class="option">-filter_name "&lt;partial name1&gt; | "&lt;partial name2&gt; | ..."</span>.</td>
+    </tr>
+    <tr>
+        <td>-filter_deleted_files</td>
+        <td></td>
+        <td>Filters on deleted files.  This option only looks only at the $MFT file to find the deleted files.</td>
+    </tr>
+    <tr>
+        <td>-filter_fullname</td>
+        <td>**</td>
+        <td>Filter on one or more fully qualified path/filename entries. The syntax is: 
+        <span class="option">-filter_fullname "&lt;path\name1&gt; | "&lt;path\name1&gt; | ..."</span>.</td>
+    </tr>
+    <tr>
+        <td>-filter_inode</td>
+        <td>**</td>
+        <td>Filter on one or more inodes. The syntax is: 
+        <span class="option">-filter_inode "&lt;inode1&gt; | "&lt;inode2&gt; | ..."</span>.</td>
+    </tr>
+    <tr>
+        <td>-filter_deleted_files_all</td>
+        <td></td>
+        <td>Filters on all deleted files in a volume.  Looks at both the $MFT file and unallocated clusters to find
+        deleted files. This option is still experimental, in that when scanning unallocated clusters certain boundary
+        conditions may cause <span class="tool">ntfswalk</span> to crash, since various metadata will be corrupted.</td>
+    </tr>
+    <tr>
+        <td>-filter_unalloc_clusters</td>
+        <td></td>
+        <td>Analyzes files and directories in a volume.  Looks at just unallocated clusters and doesn't 
+        analyze the $MFT file. This option is still experimental, in that when scanning unallocated clusters 
+        certain boundary conditions may cause <span class="tool">ntfswalk</span> to crash, since various metadata will be 
+        corrupted.</td>
+    </tr>
+    <tr>
+        <td>-filter_all_clusters</td>
+        <td></td>
+        <td>Analyzes files and directories in a volume.  Looks at both the $MFT file and unallocated clusters to find
+        files and directories. This option is still experimental, in that when scanning unallocated clusters 
+        certain boundary conditions may cause <span class="tool">ntfswalk</span> to crash, since various metadata will be 
+        corrupted.</td>
+    </tr>
+    <tr>
+        <td>-filter_sig</td>
+        <td>**</td>
+        <td>Filter on one or more built in signatures. 
+        <span class="option">mz</span> = exes, dlls, and driver files, 
+        <span class="option">hive</span> = registry hives, 
+        <span class="option">evt</span> = event logs (both .evt and .evtx types), and 
+        <span class="option">sqlite</span> = SQLite v3 databases.
+        The syntax is: <span class="option">-filter_sig "mz|hive|evt|sqlite"</span> to
+        filter on all signatures associated with mz, hive, evt and sqlite.</td>
+    </tr>
+    <tr>
+        <td>-filter_dir</td>
+        <td>**</td>
+        <td>Filter on one or more directories. Will filter the first level down in default mode. The syntax is:
+        <span class="option">-filter_dir "&lt;dir1&gt; | &lt;dir2&gt; | ..."</span>.  To filter
+        beyond one directory, use a wildcard '*' and a number pair to specify the number of directories to 
+        scan.  For example: <span class="option">-filter_dir "c:\$Recycle.Bin\*3"</span> to enumerate
+        3 directories down in the recycle bin directory. Use this wildcard carefully, in that if too many directories
+        are specified, <span class="tool">ntfswalk</span> will need to take alot time to compute all the subdirectories 
+        prior to processing the data.  It is usually much faster to do an entire drive in default mode than to
+        specify a deep directory scan.</td>
+    </tr>
+    <tr>
+        <td>-filter_dir_inode</td>
+        <td>**</td>
+        <td>Filter one or more directory inodes. Will filter the first level down. The syntax is:
+        <span class="option">-filter_dir_inode "&lt;inode1&gt; | &lt;inode2&gt; | ..."</span>. </td>
+    </tr>
+    <tr>
+        <td>-filter_start_time</td>
+        <td></td>
+        <td>Filter on a time start. Time is specified in UTC format using the following notation:
+         <span class="option">mm/dd/yyyy hh:mm:ss</span>, or without time, 
+         <span class="option">mm/dd/yyyy</span>. The syntax is: 
+         <span class="option">-filter_start_time &lt;date&gt;</span>.</td>
+    </tr>
+    <tr>
+        <td>-filter_stop_time</td>
+        <td></td>
+        <td>Filter on a time stop. Time is specified in UTC format using the following notation:
+         <span class="option">mm/dd/yyyy hh:mm:ss</span>, or without time, 
+         <span class="option">mm/dd/yyyy</span>. The syntax is: 
+         <span class="option">-filter_stop_time &lt;date&gt;</span>.</td>
+    </tr>
+    <tr>
+        <td>-filter_max_size</td>
+        <td></td>
+        <td>Filter on the size of the file, so it doesn't exceed the max specified here. Only 
+        applies to the 'unnamed' data attribute.</td>
+    </tr>
+    <tr>
+        <td>-filter_min_size</td>
+        <td></td>
+        <td>Filter on the size of the file, so it at least has this amount of data.  Only 
+        applies to the 'unnamed' data attribute.</td>
+    </tr>
+</table>
+
+<p>The options labeled as 'Extra' require a separate license for them to be unlocked.</p>
+
+</div>
+
+<hr/><!-- Extraction Options -->
+<h2><a id="extraction">Extraction Options</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<p>The third area is the extraction options.  All options include a results file.  
+This generated file will contain much of the metadata one needs for forensic 
+analysis.  For more detailed analysis, one can add extra data to the results, 
+including: (a) the first run of bytes for each file or (b) the cluster run 
+information.  To physically extract the contents of the file, one can specify 
+an archive directory as well as whether to include slack data or not. If one 
+does extract the file data, <span class="tool">ntfswalk</span> will compute the MD5 hash 
+of the file and annotate this data to the results file as well. The options 
+available and their syntax are:</p>
+
+<table>
+    <tr>
+        <th>Option</th>
+        <th>Extra</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>-action_copy_files </td>
+        <td>**</td>
+        <td>Extracts the file data into the specified directory. The syntax is: 
+        <span class="option">-action_copy_files &lt;directory to store files&gt; [-raw] [-skip_sparse_clusters]</span>.
+        The <span class="option">-raw</span> sub-option says to copy all clusters associated with a file
+        in a bit-for-bit copy operation.
+        This includes slack space as well as not uncompressing any data that may use native NTFS compression.  
+        The <span class="option">-skip_sparse_clusters</span> sub-option 
+        says to ignore any clusters that are sparse during the copy operation.</td>
+    </tr>
+    <tr>
+        <td>-action_include_header </td>
+        <td>**</td>
+        <td>Extracts the first 32 bytes of data and appends it to the CSV output</td>
+    </tr>
+    <tr>
+        <td>-action_include_clusterinfo </td>
+        <td>**</td>
+        <td>Shows additional information regarding data types and cluster runs and appends it to the CSV output</td>
+    </tr>
+</table>
+
+<p>The options labeled as 'Extra' require a separate license for them to be unlocked.</p>
+
+</div>
+
+<hr/><!-- Format Options -->
+<h2><a id="formatting">Format Options</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<p>The fourth area allows one to select how one wishes to see the results. 
+As mentioned above, even if one only wishes to extract data to a directory, 
+there will be a results file that logs all the files passing the filter tests.
+The default output is plain text, which by itself, has reasonable formatting 
+when viewed in notepad and word wrap is turned off. The other formats are geared 
+for spreadsheet analysis or other post processing tools. Typically, any data 
+containing numbers is defaulted as hexadecimal; however, there is an option to 
+transform the output into base10 notation, if desired. The options 
+available and their syntax are:</p>
+
+<table>
+    <tr>
+        <th>Option</th>
+        <th>Extra</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>-csv</td>
+        <td></td>
+        <td>Outputs the data fields delimited by commas. Since filenames can have commas, to ensure 
+        the fields are uniquely separated, any commas in the filenames get converted to spaces.</td>
+    </tr>    
+    <tr>
+        <td>-csvl2t</td>
+        <td></td>
+        <td>Outputs the data fields in accordance with the log2timeline format.</td>
+    </tr>
+    <tr>
+        <td>-bodyfile</td>
+        <td></td>
+        <td>Outputs the data fields in accordance with the 'body-file' version3 specified in 
+        the SleuthKit. The date/timestamp outputted to the body-file is in terms of UTC.  
+        If using the body-file in conjunction with the mactime.pl utility, one needs to set 
+        the environment variable TZ=UTC.</td>
+    </tr>
+    <tr>
+        <td>-hashfile</td>
+        <td>**</td>
+        <td>Outputs a hashfile with either MD5, SHA1 or both hashes.  The syntax is:
+        <span class="option"> -hashfile "md5"</span> to output the MD5
+        hash,  <span class="option"> -hashfile "sha1"</span> to output the 
+        SHA1 hash, or 
+        <span class="option"> -hashfile "md5 | sha1"</span> to output them both.</td>
+    </tr>
+    <tr>
+        <td>-csvperpath</td>
+        <td></td>
+        <td>Experimental.  Forces one line of CSV output per path/file entry.  Since only one
+        line is used, the MACB dates for standard information and filename is also spanned across
+        one entry, which makes for a long record.  This is useful for those users wishing to 
+        parse the output of ntfswalk into another application where most of the fields 
+        are in a separate field.  There is an extra option to group the date and time into one field 
+        [<span class="option">-pair_datetime</span>].  The default is to put the date 
+        and time into separate fields.</td>
+     </tr>
+
+</table>
+
+<p>The options labeled as 'Extra' require a separate license for them to be unlocked.</p>
+
+</div>
+
+<hr/><!-- General Purpose Options -->
+<h2><a id="general">General Purpose Options</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<table>
+    <tr>
+        <th>Option</th>
+        <th>Extra</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>-out</td>
+        <td></td>
+        <td>Put the summary information in the specified path/filename. The syntax is
+        <span class="option">-out &lt;results file&gt;</span>.</td>
+    </tr>
+    <tr>
+        <td>-hide_dos_fntimes</td>
+        <td></td>
+        <td>Do not include any DOS 8.3 filename timestamps in the output</td>
+    </tr>
+    <tr>
+        <td>-hostname</td>
+        <td></td>
+        <td>Option is used to populate the output records with a specified hostname. The syntax
+	     is <span class="option">-hostname &lt;name to use&gt;</span>. </td>
+    </tr>
+     <tr>
+        <td>-script</td>
+        <td></td>
+        <td>Use the specified file to express which options to use. The syntax is: 
+        <span class="option">-script &lt;file&gt;</span>.</td>
+    </tr>
+    <tr>
+        <td>-base10</td>
+        <td></td>
+        <td>Ensure all size/address outputs are displayed in base-10 format versus hexadecimal format. Default
+        is hexadecimal format.</td>
+    </tr>
+   <tr>
+        <td>-use_orig_ext</td>
+        <td></td>
+        <td>Normal behavior is to append a <em>.bin</em> extension to any file copied. This option 
+        says not to append the <em>.bin</em>, but to use the original extension.</td>
+    </tr>
+    <tr>
+        <td>-mftstart</td>
+        <td>**</td>
+        <td>Filter an inode range.  The syntax is: 
+        <span class="option">-mftstart &lt;inode&gt; [-mftrange &lt;number of inodes&gt;]</span>.</td>
+    </tr>
+    <tr>
+        <td>-filerecord_offset</td>
+        <td>**</td>
+        <td>Output the absolute offset of the MFT filerecord metadata</td>
+    </tr>
+    <tr>
+        <td>-quiet</td>
+        <td>**</td>
+        <td>This option suppresses status output as each file is processed. </td>
+    </tr>
+    <tr>
+        <td>-no_whitespace</td>
+        <td>**</td>
+        <td>Used in conjunction with <span class="option">-csv</span> option 
+        to remove any whitespace between the field  value and the CSV separator.</td>
+    </tr>
+    <tr>
+        <td>-csv_separator</td>
+        <td>**</td>
+        <td>Used in conjunction with the <span class="option">-csv</span> 
+        option to change the CSV separator from the default comma to something else.
+		Syntax is <span class="option">-csv_separator "|"</span> to change
+		the CSV separator to the pipe character.  To use the tab as a separator, one
+        can use the <span class="option">-csv_separator "tab"</span> OR 
+        <span class="option">-csv_separator "\t"</span> options.</td>
+    </tr>
+    <tr>
+        <td>-dateformat</td>
+        <td>**</td>
+        <td>Output the date using the specified format. Default behavior is 
+        <span class="option">-dateformat "mm/dd/yyyy"</span>.
+        This allows more flexibility for a desired format.  For example, one 
+        can use this to show year first, via 
+        <span class="option">"yyyy/mm/dd"</span> or day first, 
+        via <span class="option">"dd/mm/yyyy"</span>, or only show 2 
+        digit years, via the <span class="option">"mm/dd/yy"</span>. The 
+        restriction with this option is the forward slash (/) symbol needs to separate 
+        month, day and year and the month is in digit (1-12) form versus abbreviated 
+        name form. </td>
+    </tr>
+    <tr>
+        <td>-timeformat</td>
+        <td>**</td>
+        <td>Output the time using the specified format. Default behavior is 
+        <span class="option">-timeformat "hh:mm:ss.xxx"</span>
+        One can adjust the format to microseconds, via 
+        <span class="option">"hh:mm:ss.xxxxxx"</span> or nanoseconds, 
+        via <span class="option">"hh:mm:ss.xxxxxxxxx"</span>, or no fractional seconds, via 
+        <span class="option">"hh:mm:ss"</span>. The 
+        restrictions with this option is that a colon (:) symbol needs to separate hours, minutes 
+        and seconds, a period (.) symbol needs to separate the seconds and fractional seconds, and the 
+        repeating symbol 'x' is used to represent number of fractional seconds. (Note: the fractional 
+        seconds applies only to those time formats that have the appropriate precision available. 
+        The Windows internal filetime has, for example, 100 nsec unit precision available. 
+        The DOS time format and the UNIX 'time_t' format, however, have no fractional seconds). 
+        Some of the times represented by this tool may use a time format without fractional 
+        seconds and therefore will not show a greater precision beyond seconds when using this 
+        option.</td>
+    </tr>
+    <tr>
+        <td>-pair_datetime</td>
+        <td>***</td>
+        <td>Output the date/time as 1 field vice 2</td>
+    </tr>
+    <tr>
+        <td>-cpu</td>
+        <td>***</td>
+        <td>This option is experimental and can only be used for processing MFT entries (as opposed
+        to scanning unallocated clusters or other clusters outside the MFT).  Its purpose is to take
+        advantage of multiple CPUs to process a desired target.  This option also requires
+        one to specify an output file, via -out &lt;result file&gt;.  Since this option creates
+        multiple temporary files before merging the results into a final results file, one
+        can also specify a folder where the temporary files can be stored.  The option to specify
+        a temporary folder is -tempdir &lt;folder name&gt;. The syntax is:
+        <span class="option">-cpu &lt;#children instances&gt; -out &lt;results file&gt; [-tempdir &lt;folder&gt;]</span> </td>
+    </tr>
+</table>
+
+<p>The options labeled as 'Extra' require a separate license for them to be unlocked.</p>
+
+</div>
+
+
+<hr/><!-- Examples -->
+<h2><a id="examples">Examples</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<p>1. Analyze a live NTFS partition and copy all PDF files to a specified directory, using the
+<span class="option">-partition &lt;drive letter&gt;</span> and 
+<span class="option">-action_copy_files &lt;directory to store files&gt;</span>
+options.</p>
+<pre>
+    <span class="option">ntfswalk -partition c: -filter_ext "pdf" -action_copy_files "f:\extracted_files\pdf" -out f:\results.txt</span>
+</pre>
+
+<p>2. Analyze all files and extract the header from each file from a specified partition, using
+the <span class="option">-action_include_header</span> option.</p>
+<pre>
+    <span class="option">ntfswalk -partition c: -action_include_header -out "f:\mft_summary_output.txt"</span>
+</pre>
+
+<p>3. Analyze a hidden NTFS partition by using the <span class="option">-drivenum</span>
+option.  When using this option, it 
+will not be obvious what the volume offset is.  To assist in resolving the volume offset, 
+this option has the ability to find the volume offsets and display them to the user.  
+Therefore, one can do an initial query using the command to query the volume offsets
+of drive number 0.</p>
+
+<pre>
+    <span class="option">ntfswalk -drivenum 0</span>
+</pre>
+
+<p> If your first drive has any NTFS volumes, their offsets will be displayed.  Below is 
+the output from my system, when running the above command:</p>
+       
+<pre>
+    volume offset [ 0x100000 ] : ntfs
+    volume offset [ 0x6500000 ] : ntfs
+    volume offset [ 0x1870500000 ] : ntfs
+</pre>
+
+<p>One can use the returned offset to analyze any volume that is desired.  In this case, 
+the first NTFS volume is the hidden.  So if one wanted to extract all files from this 
+hidden volume that contain the word "boot" in their filename, one would use the 
+<span class="option">-filter_name &lt;partial name to filter&gt;</span> and 
+<span class="option">-action_copy_files &lt;directory to store files&gt;</span> 
+options.</p>
+        
+<pre>
+    <span class="option">ntfswalk -drivenum 0 -offset 0x100000 -filter_name "boot" -action_copy_file "f:\extracted_files\boot"</span> 
+</pre>
+
+<p>4. Analyze an image of a volume by using the option 
+<span class="option">-image  &lt;partition image&gt;</span>, and redirect the 
+output to a file </p>
+<pre>
+    <span class="option">ntfswalk -image  &lt;partition file&gt; &gt; results.txt</span>
+</pre>
+
+<p>5. Analyze an image of a disk via the option 
+<span class="option">-image  &lt;disk image&gt; -offset &lt;volume offset&gt;</span>
+and redirect the output to a file</p>
+<pre>
+    <span class="option">ntfswalk -image  &lt;disk image&gt; -offset &lt;volume offset&gt; &gt; results.txt</span>
+</pre>
+
+<p>One can use the same trick discussed in a previous example to find the offset of the 
+NTFS volumes within a disk image by just using the 
+<span class="option">-image &lt;disk image&gt;</span> command where 
+it will output the NTFS volume offsets.</p>
+
+<p>6. Analyze an Volume Shadow snapshot via the option 
+<span class="option">-vss  &lt;snapshot index&gt;</span>
+and redirect the output to a file</p>
+<pre>
+    <span class="option">ntfswalk -vss  &lt;1&gt; &gt; results.txt</span>
+</pre>
+
+</div>
+
+<hr/><!-- CSV field definitions -->
+<h2><a id="csv_defns">CSV field definitions</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Definition</th>
+    </tr>
+    <tr>
+        <td>mft entry</td>
+        <td>Master File Table (MFT) entry used for this file/folder</td>
+    </tr>
+    <tr>
+        <td>seqnum (after mft entry)</td>
+        <td>MFT sequence number</td>
+    </tr>
+    <tr>
+        <td>parent mft</td>
+        <td>Parent MFT of the MFT entry</td>
+    </tr>
+    <tr>
+        <td>seqnum (after parent mft)</td>
+        <td>Parent MFT sequence number</td>
+    </tr>
+
+    <tr>
+        <td>type</td>
+        <td>file, dir or deleted</td>
+    </tr>
+    <tr>
+        <td>ext</td>
+        <td>Extension used</td>
+    </tr>
+    <tr>
+        <td>ref</td>
+        <td>Reference count in MFT entry</td>
+    </tr>
+    <tr>
+        <td>date</td>
+        <td>Date of the MFT entry (refer to MACB to determine type of date)</td>
+    </tr>
+    <tr>
+        <td>time-utc</td>
+        <td>Time of the MFT entry (refer to MACB to determine type of time)</td>
+    </tr>
+    <tr>
+        <td>MACB</td>
+        <td>M=<span class="option">M</span>odify, 
+        A=<span class="option">A</span>ccess, 
+        C=MFT <span class="option">C</span>hanged, 
+        B=<span class="option">B</span>irth/create. 
+        si = Timestamps associated with the Standard Information Attribute, 
+        fn = Timestamps associated with the Filename Attribute, 
+        fn8.3 = Timestamps associated with the Short Filename Attribute</td>
+    </tr>
+    <tr>
+        <td>other info</td>
+        <td>Noteworthy items of interest</td>
+    </tr>
+    <tr>
+        <td>path and filename</td>
+        <td>-ditto-</td>
+    </tr>
+    <tr>
+        <td>various data types</td>
+        <td>List of any attributes that contain data</td>
+    </tr>
+</table>
+
+<h4>Option <span class="option">-csvperpath</span> adds these fields</h4>
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Definition</th>
+    </tr>
+    <tr>
+        <td>SI mdate</td>
+        <td>Target standard information modify date</td>
+    </tr>
+    <tr>
+        <td>mtime-UTC (after SI mdate)</td>
+        <td>Target standard information modify time</td>
+    </tr>
+    <tr>
+        <td>SI adate</td>
+        <td>Target standard information access date</td>
+    </tr>
+    <tr>
+        <td>atime-UTC (after SI adate)</td>
+        <td>Target standard information access time</td>
+    </tr>
+    <tr>
+        <td>SI cdate</td>
+        <td>Target standard information MFT change date</td>
+    </tr>
+    <tr>
+        <td>ctime-UTC (after SI cdate)</td>
+        <td>Target standard information MFT change time</td>
+    </tr>
+    <tr>
+        <td>SI bdate</td>
+        <td>Target standard information birth/create date</td>
+    </tr>
+    <tr>
+        <td>btime-UTC (after SI bdate)</td>
+        <td>Target standard information birth/create time</td>
+    </tr>
+    <tr>
+        <td>FN mdate</td>
+        <td>Target filename modify date</td>
+    </tr>
+    <tr>
+        <td>mtime-UTC (after FN mdate)</td>
+        <td>Target filename modify time</td>
+    </tr>
+    <tr>
+        <td>FN adate</td>
+        <td>Target filename access date</td>
+    </tr>
+    <tr>
+        <td>atime-UTC (after FN adate)</td>
+        <td>Target filename access time</td>
+    </tr>
+    <tr>
+        <td>FN cdate</td>
+        <td>Target filename MFT change date</td>
+    </tr>
+    <tr>
+        <td>ctime-UTC (after FN cdate)</td>
+        <td>Target filename MFT change time</td>
+    </tr>
+    <tr>
+        <td>FN bdate</td>
+        <td>Target filename birth/create date</td>
+    </tr>
+    <tr>
+        <td>btime-UTC (after FN bdate)</td>
+        <td>Target filename birth/create time</td>
+    </tr>
+    <tr>
+        <td>sym link</td>
+        <td>Target symbolic link</td>
+    </tr>
+    <tr>
+        <td>object ID</td>
+        <td>Target object ID </td>
+    </tr>
+    <tr>
+        <td>ADS metadata</td>
+        <td>Alternate data streams associated with this MFT entry</td>
+    </tr>
+    <tr>
+        <td>Time warning</td>
+        <td>Any time anomalies that are detected</td>
+    </tr>
+    <tr>
+        <td>8.3 mdate</td>
+        <td>Target short filename modify date</td>
+    </tr>
+    <tr>
+        <td>mtime-UTC (after 8.3 mdate)</td>
+        <td>Target short filename modify time</td>
+    </tr>
+    <tr>
+        <td>8.3 adate</td>
+        <td>Target short filename access date</td>
+    </tr>
+    <tr>
+        <td>atime-UTC (after 8.3 adate)</td>
+        <td>Target short filename access time</td>
+    </tr>
+    <tr>
+        <td>8.3 cdate</td>
+        <td>Target short filename MFT change date</td>
+    </tr>
+    <tr>
+        <td>ctime-UTC (after 8.3 cdate)</td>
+        <td>Target short filename MFT change time</td>
+    </tr>
+    <tr>
+        <td>8.3 bdate</td>
+        <td>Target short filename birth/create date</td>
+    </tr>
+    <tr>
+        <td>btime-UTC (after 8.3 bdate)</td>
+        <td>Target short filename birth/create time</td>
+    </tr>
+</table>
+</div>
+
+<hr/><!-- Known Issues -->
+<h2><a id="issues">Known Issues</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<ol>
+    <li>If running on a Windows operating system post XP and running under admin 
+    permissions, any network shares established prior as 
+    a regular (non-admin) user, will be isolated from other accounts 
+    (including the admin account).  This problem occurs because User Account 
+    Control (UAC) treats members of the Administrators group as standard users. 
+    Therefore, network shares that are mapped by logon scripts are shared with 
+    the standard user access token instead of with the full administrator access 
+    token.</li>
+</ol>
+</div>
+
+<hr/><!-- Authentication and License File -->
+<h2><a id="auth">Authentication and License File</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<p>This tool has authentication built into the binary.  There are two authentication 
+mechanisms:  
+(a) the digital certificate embedded into the binary and (b) the runtime authentication.   
+For the first method, only the Windows and Mac OS-X (if available) versions have been 
+signed by an X-509 digital code signing certificate, which is validated by Windows 
+(or OS-X) during operation.  If the binary has been tampered with, the digital 
+certificate will be invalidated.</p>
+
+<p>For the second (runtime authentication) method, the authentication does two things: 
+(a) validates that the tool has a valid license and (b) validates the 
+tool's binary has not been corrupted.   The license needs to be in the same directory 
+of the tool for it to authenticate.   Furthermore any modification to the license, 
+either to its name or contents, will invalidate the license.   The runtime binary 
+validation hashes the executable that is running and fails the authentication if it 
+detects any modifications. </p>
+
+<h4><em>Limited</em> versus <em>Demo</em> versus <em>Full</em> in the tool's output banner</h4>
+
+<p>The tools from TZWorks will output header information about the tool's version
+and whether it is running in <em>limited</em>, <em>demo</em> or <em>full</em> mode.  This is 
+directly related to what version of a license the tool authenticates with.   The 
+<em>limited</em> and <em>demo</em> keywords indicates some functionality of the tool is not 
+available, and the <em>full</em> keyword indicates all the functionality is available.  
+The lacking functionality in the <em>limited</em> or <em>demo</em> versions may mean one or 
+all of the following: (a) certain options may not be available, 
+(b) certain data may not be outputted in the parsed results, and (c) the license has a 
+finite lifetime before expiring.</p>
+</div>
+
+<hr/><!-- Version history -->
+<h2><a id="version_history">Version history</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<ul>
+    <li>02/11/2017 - v0.72 - bug fixes in shared libraries that affects this tool</li>
+    <li>12/07/2017 - v0.71 - Fixed error status during -mftfile option. 
+    Fixed Win10 issue with progress status display when redirecting output</li>
+    <li>08/22/2017 - v0.70 - bugfix to VMWare VMDK for loading snapshots</li>
+    <li>04/29/2017 - v0.69 - ntfs native compression bugfix</li>
+    <li>03/23/2017 - v0.68 - handle boundary condition for 'dd' image during load</li>
+    <li>02/20/2017 - v0.67 - adjusted the -hashfile option to handle deleted files
+    with more care, in that if a corrupted set of data is detected that it will
+    display zero's for the hash value</li>
+    <li>11/30/2016 - v0.66 - fixed -cpu option boundary condition</li>
+    <li>11/14/2016 - v0.65 - fixed bug in filesystem compression routine
+    <li>08/13/2016 - v0.64 - modified Linux build to allow files with special chars to work with -cpu option.
+                        added -separate_files for -cpu option to nix the default merge functionality</li>
+    <li>05/18/2016 - v0.63 - added a couple new options (to filter on min and max) of
+                            file size and to use multiple instances of ntfswalk to process of target
+                            MFT file.</li>
+    <li>03/12/2016 - v0.62 - updated the ntfs lib</li>
+    <li>01/28/2016 - v0.61 - mods to allow for differences in VMWare 12</li>
+    <li>11/20/2015 - v0.60 - option -csv_separator now allows for tab separator. fixed boundary
+                            condition bug in NTFS engine</li>
+    <li>09/09/2015 - v0.59 - updated icon and libs</li>
+    <li>07/09/2015 - v0.58 - modified some output formatting for CSV when handling fields with CRLF or 
+                            other characters affecting separator alignment</li>
+    <li>03/09/2015 - v0.57 - shared library updates</li>
+    <li>01/16/2015 - v0.56 - bug fix using -script command </li>
+    <li>01/09/2015 - v0.55 - fixed bug and format errors in output</li>
+    <li>11/07/2014 - v0.54 - fixed separator bug in -csvperpath output</li>
+    <li>08/01/2014 - v0.53 - fixed indexing with directories with very large set of files/subdirectories.
+                            fixed -hide_dos_fntimes switch. added new -csvperpath output option. added
+                            new -vss option to extract data from a volume shadow.</li>
+    <li>05/17/2014 - v0.52 - fixed boundary condition when parsing reparse points</li>
+	<li>04/05/2014 - v0.51 - fixed various boundary conditions (with VMWare disk, OSX,
+                            NTFS compression)</li>
+	<li>01/16/2014 - v0.50 - auth update</li>
+	<li>11/18/2013 - v0.49 - handle boundary condition for corrupted NT compressed file</li>
+	<li>10/26/2013 - v0.48 - for copy operations, only output associated data for
+							files copied. </li>
+	<li>10/09/2013 - v0.47 - fixed boundary condition in [-filter_file] option. fixed 
+								bugs in copying desired files. fixed cluster listing in 
+								output.</li>
+    <li>08/22/2013 - v0.46 - routine library maintenance updates</li>
+    <li>07/05/2013 - v0.45 - added a number of new options based on commercial user input..
+                            Filtering multiple extensions, names and directories added. 
+                            Included filtering on binary signature on a few common types. 
+                            Added hashing and the ability to traverse unallocated space 
+                            in a volume.  Extraction of data now includes named and
+                            unnamed NTFS_DATA types. Included date and time output
+                            formatting flexibility.</li>
+    <li>11/03/2012 - v0.44 - maintenance update of core libraries w/ bug fixes </li>
+    <li>10/30/2012 - v0.43 - fixed bug w/ NTFS inadvertently added in previous version</li>
+    <li>09/24/2012 - v0.42 - added hash check to ensure binary integrity</li>
+    <li>07/19/2012 - v0.41 - default to UTF-8 output</li>
+    <li> 04/05/2012 - v0.40 - added license authentication.   </li>
+    <li>01/31/2012 - v0.39 - mods to handle outputting multiple filenames if specified in the
+        MFT entry.</li>
+    <li>01/26/2012 - v0.38 - changed the -csvl2t formatting based on comments recv'd. fixed
+        bodyfile errors</li>
+    <li>01/21/2012 - v0.37 - changed the ntfs parsing engine to ensure MFT entries with multiple
+        parent directories are parsed separately. Also incorporated an option to parse standalone
+        $MFT data. Deprecated some previous capabilities that weren't being used. Due to
+        some false positives, modified the prototype time heuristics option to only detect
+        time range errors and made it part of the default behavior.</li>
+    <li>08/06/2011 - v0.36 added some additional time heuristics called '-action_time_analysis'
+        to detect very rare time anomalies that can only be introduced by modifying the
+        std information MFT time change. added other heuristics but they are still too prototype
+        to release.</li>
+    <li>06/04/2011 - v0.35 - added 32 and 64 bit versions to the mix</li>
+    <li>05/21/2011 - v0.34 - NTFS library maintenance updates</li>
+    <li>03/26/2011 - v0.33 - provided separation between start/stop time filtering with separate
+        tags to help avoid erroneous inputs. Also separated the option -action_include_header
+        into -action_include_header_ex
+        &lt;num bytes&gt;
+    </li>
+    <li>03/19/2011 - v0.32 added option to all std info timestamps to be included in the output
+        [-action_include_timestamps] and enabled functionality to extract a larger chunk
+        of file header data</li>
+    <li>03/05/2011 - v0.31 - added capability to access VMWare Workstation created images (signatured
+        with 'KDMV')</li>
+    <li>02/27/2011 - v0.3 - additional scanning options</li>
+    <li>01/16/2011 - v0.2 - fixed bug in handling certain cluster boundary conditions.</li>
+    <li>01/01/2011 - v0.1 - 1st prototype released for testing purposes</li>
+</ul>
+</div>
+
+<hr/><!-- References -->
+<h2><a id="references">References</a>
+<a class="back_to_top" href="ntfswalk_readme.htm#index"> (top) </a></h2>
+
+<div class="indent">
+<ol>
+    <li><a href="http://en.wikipedia.org/wiki/NTFS">http://en.wikipedia.org/wiki/NTFS</a> website</li>
+    <li>Brian Carrier's book, File System Forensic Analysis, sections on NTFS</li>
+    <li>Various Microsoft Technet articles</li>
+    <li>SleuthKit's <a href="http://wiki.sleuthkit.org/index.php?title=Body_file">Body file</a> format</li>
+    <li><a href="http://log2timeline.net/">log2timeline</a> CSV format</li>
+</ol>
+</div>
+
+<br />
+<hr  class="linecolor"/>
+<!-- Copyright/Contact Information -->
+
+<p class="footer">
+Copyright &copy; TZWorks, LLC, All Rights Reserved <br />
+Contact Info: <a href="mailto:info@tzworks.net">info&#64;tzworks.net</a></p>
+
+<p></p>
+<hr />
+<p></p>
+</body>
+
+</html>
+
+LICENSE_AUTHENTICATION
+LZWAqfwCLRCnIzMO5lZ+bh7nP3/qY35vyUSbAhWRNKmR5Dd7xDhKiCUqOagNiB68hfi4EkF6iGi+
+sTzT1ribVr3cvNUuVCoVSf+vkumM8pNnZjQvn2fliFUcxwQvEvQoi0+IyL8z887etd+UhdwYnw6m
+u4SjeV0+u6lb4ij4XymBCSECANhkOtp5uHlrFWLpjsQmOSyGnmcVbTQgn9uT8UXhOKbqZll49ukM
+yMOS7YtHHvNelZ6oETHp0+fxicOfpGWGuz1YmhYqbZODH3U0rm/i3yNPP0V5tZ64Zeps3v9PdbNJ
+tU6ToUkQVnVd8iN55vDkmjycN+2C3i2gfAWaYw==
+ 

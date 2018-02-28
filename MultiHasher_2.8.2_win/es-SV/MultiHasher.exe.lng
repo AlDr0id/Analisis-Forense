@@ -1,0 +1,388 @@
+﻿; Menu "Language"
+1=Lenguaje
+; Menu "Language" > "Automatic"
+2=Automático
+; Menu "File"
+101=&Archivo
+; Menu "File" > "Open list..."
+102=&Abrir lista...
+; Menu "File" > "Calculate"
+103=&Calcular
+; Menu "File" > "Exit"
+104=&Salir
+; Menu "File" > "Add"
+105=&Añadir
+; Menu "File" > "Add" > "Files..."
+106=Archivos...
+; Menu "File" > "Add" > "Folder..."
+107=Carpeta...
+; Menu "File" > "Add" > "Path..."
+108=Directorio...
+; Menu "File" > "Add" > "Process..."
+109=Proceso...
+; Menu "File" > "Save list..."
+110=&Guardar Lista...
+; Menu "File" > "Calcular firma de cadena de texto..."
+111=Calcular en cadena de &texto...
+; Menu "Help"
+121=&Ayuda
+; Menu "Help" > "%0 Help"
+; %0 = Application name
+122=&Ayuda de %0
+; Menu "Help" > "About %0"
+; %0 = Application name
+123=&Acerca de %0
+; Menu "Help" > "Report bug"
+124=&Reportar error
+; Menu "Help" > "Troubleshooting information"
+125=Información para la solución de problemas
+; Menu "Edit"
+141=&Editar
+; Menu "Edit" > "Select all"
+142=Seleccionar &todo
+; Menu "Edit" > "Preferences..."
+143=Pre&ferencias...
+; Menu "Edit" > "Copy"
+144=&Copiar
+; Menu "Edit" > "Select hash algorithms"
+145=Seleccionar &algoritmos de identificación
+; Menu "Search"
+161=&Buscar
+; Menu "Search" > "Find"
+162=&Encontrar
+; Menu "Search" > "Use regular expression"
+163=Usar &expresiones regulares
+; Menu "View"
+181=&Ver
+; Menu "View" > "Show all"
+182=Mostar todo
+; Menu "View" > "Show invalids"
+183=Mostrar inválidos
+; Menu "View" > "Show errors"
+184=Mostrar errores
+; Menu "Tools"
+201=&Herramientas
+
+; About %0
+; %0 = Application name
+301=Acerca de %0
+; All rights reserved.
+302=Todos los derechos reservados.
+; License
+304=Licencia
+; Visit website
+305=Sitio Web
+; Reportar error
+306=Reportar error
+; "Open" dialog title
+307=Abrir
+; "Open"
+308=&Abrir
+; "Cancel"
+309=&Cancelar
+; "File name:" label in "Open" dialog
+310=Nombre:
+; "All files"
+311=Todos los archivos
+; "Translation"
+312=Traducción
+; "Author: %0"
+; %0 = Translation author
+313=Autor: %0
+; "Locale: %0"
+; %0 = Lugar
+314=Lugar: %0
+; "ID del Lugar: %0"
+; %0 = ID del lugar (decimal)
+; %1 = ID del lugar (hex)
+315=ID del lugar: %0 (%1)
+; %0 = Name of the language in English
+316=Nombre: %0
+; "Native name: %0"
+; %0 = Nombre original del lenguaje
+317=Nombre original: %0
+; "O&K" button
+318=&Aceptar
+; "Close"
+319=Cerrar
+; "Refresh"
+320=Actualizar
+; "Select all"
+321=Seleccionar todo
+; "Select none"
+322=Deseleccionar
+; "Add"
+323=Añadir
+; "Preferences"
+324=Preferencias
+; "< Previous"
+325=< Anterior
+; "Next >"
+326=Siguiente >
+; "Open"
+327=Abrir
+; "All supported files"
+328=Todos los archivos soportados 
+; "&Save" button
+329=&Guardar
+; "Save as" dialog title
+330=Guardar como
+; "Associate file types"
+331=Asociar extensiones de archivos
+; "Remove file associations"
+332=Eliminar asociaciones de archivos
+; "Copy to clipboard"
+333=Copiar al portapapeles
+
+; "Add files..."
+501=Añadir archivos...
+; "Add folder..."
+502=Añadir carpeta...
+; "Add files"
+503=Añadir archivos
+; "Remove"
+504=Quitar
+; "Remove all"
+505=Quitar todo
+; "Clear"
+506=Limpiar
+; "Show in Windows Explorer"
+507=Mostrar en el explorador de windows
+; "Calculating... %0 file(s) remaining."
+; %0 = Number of files remaining
+508=Calculando... %0 archivo(s) restantes.
+; "Calculating... %0 %%"
+; %0 = Progress (integer)
+509=Calculando... %0 %%
+; "Calculating... %0 %% [ Paused ]"
+; %0 = Progress (integer)
+510=Calculando... %0 %% [ Pausado ]
+; "Queued"
+511=Esperando
+; "Error"
+513=Error
+; "Error: cannot open file"
+514=Error: no fue posible arbir el archivo
+; "Paused"
+515=Pausado
+; "Pause"
+516=Pausado
+; "%0 file(s)."
+517=%0 archivo(s).
+; "Select files"
+518=Seleccionar archivos
+; "Calculate"
+519=Calcular
+; "Stop"
+520=Detener
+; "Canceled"
+521=Cancelado
+; "Select hash algorithms"
+522=Selecionar algoritmos de identificación
+; "Select folder"
+523=Seleccionar carpeta
+; "Drag files here or..."
+524=Arrastre archivos aqui o...
+; "Include sub-folders"
+525=Incluir subcarpetas
+; "Skip"
+526=Saltar
+; "Resume"
+527=Pausar
+; "Compare digests..."
+528=Comparar resultados...
+; "Compare Digests"
+529=Comparar resultados
+; "Type digest"
+530=Escriba el codigo a comparar
+; "Add path..."
+531=Añadir directorio...
+; "Add process..."
+532=Añadir proceso...
+; "Process List"
+533=Listado de procesos
+; "Select one or more processes"
+534=Seleccione uno o más procesos
+; "Path"
+535=Directorio
+; "Process ID"
+536=ID del proceso
+; "Path:"
+537=Ruta:
+; "Add path"
+538=Añadir directorio
+; "Offset"
+539=Offset
+; "Calculate entire file"
+540=Calcular archivo completo
+; "Calculate specified block"
+541=Calcular bloque especifico 
+; "Block size (in bytes)"
+542=Tamaño del bloque (en bytes)
+; "Basics"
+543=Basicas
+; "Advanced"
+544=Avanzadas
+; "Start calculation immediately after adding files to the queue."
+545=Iniciar calculo inmediatamente despues de añadir archivos a la cola.
+; "Add folders recursively by default."
+546=Añadir carpetas recursivamente por defecto.
+; "%0 is a service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines."
+; %0 = VirusTotal
+547=%0 es un servicio que analiza archivos y sitios sospechosos y facilita la detección rapida de virus, gusanos, toyanos y toda clase de malware detectado por motores de antivirus.
+; "API key:"
+548=Clave de la API:
+; "Query %0"
+; %0 = VirusTotal
+549=Consultar en %0
+; "Antivirus"
+550=Antivirus
+; "Result"
+551=Resultado
+; "View full report"
+552=Ver reporte completo
+; "Report date: %0"
+; %0 = Date and time
+553=Fecha del reporte: %0
+; "Results: %0/%1 (%2%%)"
+; %0 = Total number of positive detections
+; %1 = Total number of antivirus engines
+; %2 = Detection rate in percentage
+554=Resultados: %0/%1 (%2%%)
+; "Connecting..."
+555=Conectando...
+; "Downloading report..."
+556=Descargando reporte...
+; "Parsing report..."
+557=Analizando reporte...
+; "User canceled request."
+558=El usuario canceló la solicitud.
+; "Could not connect to %0."
+; %0 = VirusTotal
+559=No fue posible conectarse a %0.
+; "Could not parse report."
+560=No fue posible analizar el reporte.
+: "API key is invalid."
+561=La clave de la API es inválida.
+; "API request rate exceeded."
+562=Tasa de solicitud superada.
+; "Hash not found."
+563=No se encontro firma.
+; "Unable to retrieve report from %0 database."
+; %0 = VirusTotal
+564=No se puede obtener reporte desde la base de datos de %0.
+; "View details"
+565=Ver detalles
+; "Query %0..."
+566=Consultar en %0...
+; "File name"
+567=Nombre de archivo
+; "File size"
+568=Tamaño de archivo
+; "Block size"
+569=Tamaño del bloque
+; "Block offset"
+570=Block offset
+; "Digests"
+571=Resultados
+; "Digest"
+572=Resultado
+; "Hash"
+573=Hash
+; "Comparison digest"
+574=Comparar resultado
+; "Unknown"
+575=Desconocido 
+; "Verify file integrity"
+576=Verificar integridad de archivo
+; "Use secure connection"
+577=Usar conexión segura
+; "Search online..."
+578=Búsqueda online...
+; "%0 files to add."
+; %0 = number of files to add to file queue
+579=%0 Archivos para añadir.
+; "Updating file queue. This may take a few minutes..."
+580=Actualizado cola de archivos. Esto puede tomar unos minutos...
+; "Search"
+581=Búsqueda
+; "Show"
+582=Mostrar
+; "All"
+583=Todo
+; "Invalids"
+584=Inválidos
+; "Everything"
+585=Todo
+; "No items found."
+586=No se encontraron coincidencias.
+; "Errors"
+587=Errores
+; "System Integration"
+588=Integración del sistema
+; "Associate with"
+589=Asociar con
+; "Reading folder content..."
+590=Leyendo contenido de carpeta...
+; "Click here to select hash algorithms"
+591=Clic aqui para seleccionar los algoritmos de identificación
+; "No hash algorithms selected"
+592=NO hay algoritmos seleccionados
+; "Digests match."
+593=Digests match.
+; "Digests do not match."
+594=Digests do not match.
+; "Information"
+595=Información
+; "File version: %0"
+; %0 = Versión del ejecutable
+596=Versión de archivo: %0
+; "Build time: %0"
+; %0 = Fecha de fabricación del Ejecutable
+597=Fecha de lanzamiento: %0
+; "Text:"
+598=Texto:
+; "Encoding:"
+599=Codificación:
+; "Hash Text String"
+600=Calcular cadena de texto
+; "Search process"
+601=Buscar proceso
+; "Other"
+602=Other
+; "Show in menu bar"
+603=Mostrar en la barra de menú
+; "Type digest(s) for comparison"
+604=Escriba resultado(s) para comparar
+; "All (%0)"
+605=Todos (%0)
+; "Invalids (%0)"
+606=Inválidos (%0)
+; "Errors (%0)"
+607=Errores (%0)
+; "Error: file not found"
+608=Error: Archivo no encontrado
+; "Add files not found to file queue."
+609=Añadir archivos no encontrados a la cola.
+; "Replace current file queue"
+610=Reemplazar cola actual de archivos
+; "Select parent folder"
+611=Seleccionar carpeta padre
+; "Options"
+612=Optiones
+; "* %0 is a service developed by %1."
+; %0 = VirusTotal
+; %1 = Hispasec Sistemas
+613=* %0 es un servicio desarrollado por %1.
+; "Añadir integración en el menu contexual"
+614=Añadir integración en el menu contexual
+; "Remove integration from shell context menu"
+615=Quitar integración con el menu contextual
+; "Current user only"
+616=Solamente para usuario actual
+; "Troubleshooting information"
+617=Información para la solución de problemas
+; "Enable single window mode"
+618=Habilitar una sola ventana
+; "Analysis of the file is in queue. Try again later."
+619=Análisis del archivo en espera. Trate más tarde.

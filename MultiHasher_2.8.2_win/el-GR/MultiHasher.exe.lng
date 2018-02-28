@@ -1,0 +1,604 @@
+﻿; Menu "Language"
+1=Γλώσσα
+
+; Menu "Language" > "Automatic"
+2=Αυτόματα
+
+; Menu "File"
+101=&Αρχείο
+
+; Menu "File" > "Open list..."
+102=&Άνοιγμα λίστας...
+
+; Menu "File" > "Calculate"
+103=&Υπολογισμός
+
+; Menu "File" > "Exit"
+104=Έ&ξοδος
+
+; Menu "File" > "Add"
+105=&Προσθήκη
+
+; Menu "File" > "Add" > "Files..."
+106=Αρχεία...
+
+; Menu "File" > "Add" > "Folder..."
+107=Φάκελος...
+
+; Menu "File" > "Add" > "Path..."
+108=Διαδρομή...
+
+; Menu "File" > "Add" > "Process..."
+109=Διαδικασία...
+
+; Menu "File" > "Save list..."
+110=&Αποθήκευση λίστας...
+
+; Menu "File" > "Hash text string..."
+111=Hash &συμβολοσειρά κειμένου...
+
+; Menu "File" > "Reopen"
+112=&Επαναφόρτωση
+
+; Menu "File" > "Reopen" > "Empty list..."
+113=&Άδειασμα λίστας...
+
+; Menu "Help"
+121=&Βοήθεια
+
+; Menu "Help" > "%0 Help"
+; %0 = Application name
+122=%0 &Βοήθεια
+
+; Menu "Help" > "About %0"
+; %0 = Application name
+123=&Σχετικά με %0
+
+; Menu "Help" > "Report bug"
+124=&Αναφορά σφάλματος
+
+; Menu "Help" > "Troubleshooting information"
+125=Πληροφορίες αντιμετώπισης προβλημάτων
+
+; Menu "Edit"
+141=&Επεξεργασία
+
+; Menu "Edit" > "Select all"
+142=Επιλογή &όλων
+
+; Menu "Edit" > "Preferences..."
+143=Προ&τιμήσεις...
+
+; Menu "Edit" > "Copy"
+144=&Αντιγραφή
+
+; Menu "Edit" > "Select hash algorithms"
+145=Επιλογή αλγορίθμων &hash
+
+; Menu "Search"
+161=&Αναζήτηση
+
+; Menu "Search" > "Find"
+162=&Εύρεση
+
+; Menu "Search" > "Use regular expression"
+163=Χρησιμοποιήστε κανονική έκφ&ραση
+
+; Menu "Search" > "Search digests"
+164=Αναζήτηση &σύνοψης
+
+; Menu "Search" > "Search online"
+165=Αναζήτηση &με σύνδεση
+
+; Menu "View"
+181=&Προβολή
+
+; Menu "View" > "Show all"
+182=Εμφάνιση όλων
+
+; Menu "View" > "Show invalids"
+183=Προβολή άκυρων
+
+; Menu "View" > "Show errors"
+184=Προβολή σφαλμάτων
+
+; Menu "Tools"
+201=&Εργαλεία
+
+; About %0
+; %0 = Application name
+301=Σχετικά με %0
+
+; All rights reserved.
+302=Όλα τα δικαιώματα διατηρούνται.
+
+; License
+304=Άδεια χρήσης
+
+; Visit website
+305=Επίσκεψη ιστοσελίδας
+
+; Report bug
+306=Αναφορά σφάλματος
+
+; "Open" dialog title
+307=Άνοιγμα
+
+; "Open"
+308=&Άνοιγμα
+
+; "Cancel"
+309=&Ακύρωση
+
+; "File name:" label in "Open" dialog
+310=Όνομα αρχείου:
+
+; "All files"
+311=Όλα τα αρχεία
+
+; "Translation"
+312=Μετάφραση
+
+; "Author: %0"
+; %0 = Translation author
+313=Συντάκτης: %0
+
+; "Locale: %0"
+; %0 = Locale
+314=Τοπικό: %0
+
+; "Locale ID: %0"
+; %0 = Locale ID (decimal)
+; %1 = Locale ID (hex)
+315=Τοπικό ID: %0 (%1)
+
+; "Name: %0"
+; %0 = Name of the language in English
+;316=Name: %0
+
+; "Native name: %0"
+; %0 = Native name of the language
+;317=Native name: %0
+
+; "O&K" button
+318=O&K
+
+; "Close"
+319=Κλείσιμο
+
+; "Refresh"
+320=Ανανέωση
+
+; "Select all"
+321=Επιλογή όλων
+
+; "Select none"
+322=Ακύρωση επιλογής
+
+; "Add"
+323=Προσθήκη
+
+; "Preferences"
+324=Προτιμήσεις
+
+; "< Previous"
+325=< Προηγούμενο
+
+; "Next >"
+326=Επόμενο >
+
+; "Open"
+327=Άνοιγμα
+
+; "All supported files"
+328=Όλα τα υποστηριζόμενα αρχεία
+
+; "&Save" button
+329=&Αποθήκευση
+
+; "Save as" dialog title
+330=Αποθήκευση ως
+
+; "Associate file types"
+331=Συσχέτιση τύπων αρχείων
+
+; "Remove file associations"
+332=Αφαίρεση συσχέτισης αρχείου
+
+; "Copy to clipboard"
+333=Αντιγραφή στο πρόχειρο
+
+; "Retry"
+334=Επανάληψη
+
+; "Upload"
+335=Ανέβασμα
+
+; "Add files..."
+501=Προσθήκη αρχείων...
+
+; "Add folder..."
+502=Προσθήκη φακέλου...
+
+; "Add files"
+503=Προσθήκη αρχείων
+
+; "Remove"
+504=Αφαίρεση
+
+; "Remove all"
+505=Αφαίρεση όλων
+
+; "Clear"
+506=Καθαρισμός
+
+; "Show in Windows Explorer"
+507=Εμφάνιση σε Windows Explorer
+
+; "Calculating... %0 file(s) remaining."
+; %0 = Number of files remaining
+508=Υπολογισμός... %0 αρχείων που απομένουν.
+
+; "Calculating... %0 %%"
+; %0 = Progress (integer)
+509=Υπολογισμός... %0 %%
+
+; "Calculating... %0 %% [ Paused ]"
+; %0 = Progress (integer)
+510=Υπολογισμός... %0 %% [ Σε παύση ]
+
+; "Queued"
+511=Στην ουρά
+
+; "Error"
+513=Σφάλμα
+
+; "Error: cannot open file"
+514=Σφάλμα: Αδυναμία ανοίγματος αρχείου
+
+; "Paused"
+515=Σε παύση
+
+; "Pause"
+516=Παύση
+
+; "%0 file(s)."
+517=%0 αρχεία.
+
+; "Select files"
+518=Επιλογή αρχείων
+
+; "Calculate"
+519=Υπολογισμός
+
+; "Stop"
+520=Στοπ
+
+; "Canceled"
+521=Ακυρωμένα
+
+; "Select hash algorithms"
+522=Επιλογή αλγορίθμου hash
+
+; "Select folder"
+523=Επιλογή φακέλου
+
+; "Drag files here or..."
+524=Σύρετε αρχεία εδώ ή...
+
+; "Include sub-folders"
+525=Συμπερίληψη υποφακέλων
+
+; "Skip"
+526=Παράκαμψη
+
+; "Resume"
+527=Συνέχιση
+
+; "Compare digests..."
+528=Σύγκριση συνόψεων...
+
+; "Compare Digests"
+529=Σύγκριση συνόψεων
+
+; "Type digest"
+530=Τύπος σύνοψης
+
+; "Add path..."
+531=Προσθήκη διαδρομής...
+
+; "Add process..."
+532=Προσθήκη διεργασίας...
+
+; "Process List"
+533=Λίστα διεργασιών
+
+; "Select one or more processes"
+534=Επιλέξτε μια ή περισσότερες διεργασίες
+
+; "Path"
+535=Διαδρομή
+
+; "Process ID"
+536=ID διεργασίας
+
+; "Path:"
+537=Διαδρομή:
+
+; "Add path"
+538=Προσθήκη διαδρομής
+
+; "Offset"
+539=Offset
+
+; "Calculate entire file"
+540=Υπολογίστε ολόκληρο το αρχείο
+
+; "Calculate specified block"
+541=Υπολογισμός επιλεγμένου μπλοκ
+
+; "Block size (in bytes)"
+542=Μέγεθος Μπλοκ (σε bytes)
+
+; "Basics"
+543=Βασικά
+
+; "Advanced"
+544=Για προχωρημένους
+
+; "Start calculation immediately after adding files to the queue."
+545=Ξεκινήστε τον υπολογισμό αμέσως μετά την προσθήκη αρχείων στην ουρά.
+
+; "Add folders recursively by default."
+546=Προσθήκη φακέλων αναδρομικά από προεπιλογή.
+
+; "%0 is a service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines."
+; %0 = VirusTotal
+547=%0 είναι μια υπηρεσία που ελέγχει ύποπτα αρχεία και τις διευθύνσεις URL και διευκολύνει στη γρήγορη ανίχνευση των ιών, worms, trojans, και όλων των ειδών malware που ανιχνεύονται από τις μηχανές αντιιών.
+
+; "API key:"
+548=Κλειδί API:
+
+; "Query %0"
+; %0 = VirusTotal
+549=Απορία %0
+
+; "Antivirus"
+550=Antivirus
+
+; "Result"
+551=Αποτέλεσμα
+
+; "View full report"
+552=Προβολή πλήρους αναφοράς
+
+; "Report date: %0"
+; %0 = Date and time
+553=Ημερομηνία αναφοράς: %0
+
+; "Results: %0/%1 (%2%%)"
+; %0 = Total number of positive detections
+; %1 = Total number of antivirus engines
+; %2 = Detection rate in percentage
+554=Αποτελέσματα: %0/%1 (%2%%)
+
+; "Connecting..."
+555=Σύνδεση...
+
+; "Downloading report..."
+556=Κατέβασμα αναφοράς...
+
+; "Parsing report..."
+557=Ανάλυση αναφοράς...
+
+; "User canceled request."
+558=Ο χρήστης ακύρωσε το αίτημα.
+
+; "Could not connect to %0."
+; %0 = VirusTotal
+559=Αδυναμία σύνδεσης στο %0.
+
+; "Could not parse report."
+560=Δεν ήταν δυνατή η ανάλυση αναφοράς.
+
+: "API key is invalid."
+561=Το κλειδί API είναι άκυρο.
+
+; "API request rate exceeded."
+562=Υπέρβαση ρυθμού αιτήσεων API.
+
+; "Hash not found."
+563=Δε βρέθηκε Hash.
+
+; "Unable to retrieve report from %0 database."
+; %0 = VirusTotal
+564=Αδυναμία λήψης αναφοράς από βάση δεδομένων %0.
+
+; "View details"
+565=Προβολή λεπτομερειών
+
+; "Query %0..."
+566=Απορία %0...
+
+; "File name"
+567=Όνομα αρχείου
+
+; "File size"
+568=Μέγεθος αρχείου
+
+; "Block size"
+569=Μέγεθος Μπλοκ
+
+; "Block offset"
+570=Μπλοκ offset
+
+; "Digests"
+571=Συνόψεις
+
+; "Digest"
+572=Σύνοψη
+
+; "Hash"
+573=Hash
+
+; "Comparison digest"
+574=Παραβολή σύνοψης
+
+; "Unknown"
+575=Άγνωστο
+
+; "Verify file integrity"
+576=Επαλήθευση ακεραιότητας αρχείου
+
+; "Use secure connection"
+577=Χρήση ασφαλούς σύνδεσης
+
+; "Search online..."
+578=Αναζήτηση με σύνδεση...
+
+; "%0 files to add."
+; %0 = number of files to add to file queue
+579=%0 αρχεία για προσθήκη στην ουρά
+
+; "Updating file queue. This may take a few minutes..."
+580=Ενημέρωση ουράς αρχείων. Αυτό μπορεί να διαρκέσει μερικά λεπτά...
+
+; "Search"
+581=Αναζήτηση
+
+; "Show"
+582=Εμφάνιση
+
+; "All"
+583=Όλα
+
+; "Invalids"
+584=Άκυρα
+
+; "Everything"
+585=Τα πάντα
+
+; "No items found."
+586=Δε βρέθηκαν αντικείμενα.
+
+; "Errors"
+587=Σφάλματα
+
+; "System Integration"
+588=Ακεραιότητα συστήματος
+
+; "Associate with"
+589=Συσχέτιση με
+
+; "Reading folder content..."
+590=Ανάγνωση περιεχομένων φακέλου...
+
+; "Click here to select hash algorithms"
+591=Κλικ εδώ για επιλογή αλγορίθμων hash
+
+; "No hash algorithms selected"
+592=Δεν επιλέχθηκαν αλγότιθμοι hash
+
+; "Digests match."
+593=Ταίριασμα συνόψεων.
+
+; "Digests do not match."
+594=Οι συνόψεις δεν ταιριάζουν.
+
+; "Information"
+595=Πληροφορίες
+
+; "File version: %0"
+; %0 = Version of the executable
+596=Έκδοση εκτελέσιμου αρχείου: %0
+
+; "Build time: %0"
+; %0 = Executable's build time
+597=Κτίσιμο χρόνου εκτελέσιμου: %0
+
+; "Text:"
+598=Κείμενο:
+
+; "Encoding:"
+599=Κωδικοποίηση:
+
+; "Hash Text String"
+600=Hash Κείμενο String
+
+; "Search process"
+601=Διαδικασία αναζήτησης
+
+; "Other"
+602=Άλλο
+
+; "Show in menu bar"
+603=Εμφάνιση στη γραμμή μενού
+
+; "Type digest(s) for comparison"
+604=Πληκτρολογήστε συνόψεις για σύγκριση
+
+; "All (%0)"
+605=Όλα (%0)
+
+; "Errors (%0)"
+607=Σφάλματα (%0)
+
+; "Error: file not found"
+608=Σφάλμα: Δε βρέθηκαν αρχεία
+
+; "Add files not found to file queue."
+609=Προσθέστε τα αρχεία που δεν βρέθηκαν στην ουρά αρχείων.
+
+; "Replace current file queue"
+610=Αντικατάσταση τρέχουσας ουράς αρχείων
+
+; "Select parent folder"
+611=Επιλογή γονικού φακέλου
+
+; "Options"
+612=Επιλογές
+
+; "Add integration into shell context menu"
+614=Προσθήκη ενσωμάτωσης στο κέλυφος μενού
+
+; "Remove integration from shell context menu"
+615=Αφαίρεση ενσωμάτωσης από κέλυφος μενού
+
+; "Current user only"
+616=Τρέχων χρήστης μόνο
+
+; "Troubleshooting information"
+617=Πληροφορίες αντιμετώπισης προβλημάτων
+
+; "Enable single window mode"
+618=Ενεργοποιήστε τη λειτουργία ενός παραθύρου
+
+; "Analysis of the file is in queue. Try again later."
+619=Η ανάλυση του αρχείου είναι στην ουρά. Δοκιμάστε ξανά αργότερα.
+
+; "Track file queue progress"
+620=Παρακολουθήστε  την πρόοδο της ουράς αρχείων
+
+; "Automatically select all files when calculation finishes"
+621=Η αυτόματη επιλογή όλων των αρχείων κατά τον υπολογισμό τελειώνει
+
+; "Are you sure you want to empty the Reopen list?"
+622=Είστε σίγουροι ότι θέλετε να αδειάσετε τη λίστα επαναφόρτωσης;
+
+; "Max. number of items in Reopen menu:"
+623=Μέγιστος αριθμός αντικειμένων στο μενού Επαναφόρτωση:
+
+; "Canceling..."
+624=Ακύρωση...
+
+; "* %0 is a subsidiary of %1."
+; %0 = VirusTotal
+; %1 = Google
+643=* %0 είναι θυγατρική της %1.
+
+; "Uploading... %0%%"
+; %0 = percentage of file uploaded
+657=Ποσοστό ανεβάσματος αρχείου... %0%%
+
+; "Upload complete. Opening report..."
+658=Ανέβασμα ολοκληρώθηκε. Άνοιγμα αναφοράς...

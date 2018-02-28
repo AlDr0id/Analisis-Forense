@@ -1,0 +1,399 @@
+﻿; Menu "Language"
+1=Language
+; Menu "Language" > "Automatic"
+2=Otomatik
+; Menu "File"
+101=&Dosya
+; Menu "File" > "Open list..."
+102=&Liste aç...
+; Menu "File" > "Calculate"
+103=&Hesapla
+; Menu "File" > "Exit"
+104=Ç&ık
+; Menu "File" > "Add"
+105=&Ekle
+; Menu "File" > "Add" > "Files..."
+106=Dosyalar...
+; Menu "File" > "Add" > "Folder..."
+107=Klasör...
+; Menu "File" > "Add" > "Path..."
+108=Yol...
+; Menu "File" > "Add" > "Process..."
+109=İşlem...
+; Menu "File" > "Save list..."
+110=&Listeyi kaydet...
+; Menu "File" > "Hash &text sting..."
+111=Hash &metin dizesi...
+; Menu "File" > "Reopen"
+112=&Tekrar aç
+; Menu "File" > "Reopen" > "Empty list..."
+113=&Boş liste...
+; Menu "Help"
+121=&Yardım
+; Menu "Help" > "%0 Help"
+; %0 = Application name
+122=%0 &Yardım
+; Menu "Help" > "About %0"
+; %0 = Uygulama Adı
+123=&Hakkında %0
+; Menu "Help" > "Report bug"
+124=&Hata Raporla
+; Menu "Help" > "Troubleshooting information"
+125=Sorun giderme bilgisi
+; Menu "Edit"
+141=&Düzenle
+; Menu "Edit" > "Select all"
+142=Tümünü &seç
+; Menu "Edit" > "Preferences..."
+143=Ter&cihler...
+; Menu "Edit" > "Copy"
+144=&Kopyala
+; Menu "Edit" > "Select hash algorithms"
+145=&Hash algoritması seç
+; Menu "Search"
+161=&Ara
+; Menu "Search" > "Find"
+162=&Bul
+; Menu "Search" > "Use regular expression"
+163=Düzenli &ifade kullan
+; Menu "View"
+181=&Görünüm
+; Menu "View" > "Show all"
+182=Hepsini göster
+; Menu "View" > "Show invalids"
+183=Geçersizleri göster
+; Menu "View" > "Show errors"
+184=Hataları göster
+; Menu "Tools"
+201=&Araçlar
+
+; About %0
+; %0 = Application name
+301=Hakkında %0
+; All rights reserved.
+302=Tüm hakları saklıdır.
+; License
+304=Lisans
+; Visit website
+305=Websiteyi ziyaret et
+; Report bug
+306=Hata raporla
+; "Open" dialog title
+307=Aç
+; "Open"
+308=&Aç
+; "Caİptal
+; "File name:" label in "Open" dialog
+310=Dosya adı:
+; "All files"
+311=Tüm dosyalar
+; "Translation"
+312=Çeviri
+; "Author: %0"
+; %0 = Translation author
+313=Yazan: %0
+; "Locale: %0"
+; %0 = Locale
+314=Lokal: %0
+; "Locale ID: %0"
+; %0 = Locale ID (decimal)
+; %1 = Locale ID (hex)
+315=Lokal kimlik: %0 (%1)
+; %0 = Name of the language in English
+316=Ad: %0
+; "Native name: %0"
+; %0 = Native name of the language
+317=Yöresel adı: %0
+; "O&K" button
+318=TA&MAM
+; "Close"
+319=Kapat
+; "Refresh"
+320=Yenile
+; "Select all"
+321=Tümünü seç
+; "Select none"
+322=Hiçbirini seçme
+; "Add"
+323=Ekle
+; "Preferences"
+324=Tercihler
+; "< Previous"
+325=< Önceki
+; "Next >"
+326=Sonraki >
+; "Open"
+327=Aç
+; "All supported files"
+328=Tüm desteklenen dosyalar
+; "&Save" button
+329=&Kaydet
+; "Save as" dialog title
+330=Farklı kaydet
+; "Associate file types"
+331=Desteklenen dosya tipleri
+; "Remove file associations"
+332=Dosya desteğini sil
+; "Copy to clipboard"
+333=Panoya kopyala
+
+; "Add files..."
+501=Dosya ekle...
+; "Add folder..."
+502=Klasör ekle...
+; "Add files"
+503=Dosya ekle
+; "Remove"
+504=Sil
+; "Remove all"
+505=Tümünü sil
+; "Clear"
+506=Temizle
+; "Show in Windows Explorer"
+507=Windows Gezgini'nde göster
+; "Calculating... %0 file(s) remaining."
+; %0 = Number of files remaining
+508=Hesaplanıyor... %0 dosya kaldı.
+; "Calculating... %0 %%"
+; %0 = Progress (integer)
+509=Hesaplanıyor... %0 %%
+; "Calculating... %0 %% [ Paused ]"
+; %0 = Progress (integer)
+510=Hesaplanıyor... %0 %% [ Paused ]
+; "Queued"
+511=Sırada
+; "Error"
+513=Hata
+; "Error: cannot open file"
+514=Error: cannot open file
+; "Paused"
+515=Duraklatıldı
+; "Pause"
+516=Duraklat
+; "%0 file(s)."
+517=%0 dosya.
+; "Select files"
+518=Dosya seç
+; "Calculate"
+519=Hesapla
+; "Stop"
+520=Dur
+; "Canceled"
+521=İptal edildi
+; "Select hash algorithms"
+522=Hash algoritması seç
+; "Select folder"
+523=Klasör seç
+; "Drag files here or..."
+524=Dosyaları buraya sürükle...
+; "Include sub-folders"
+525=Alt klasörleri dahil et
+; "Skip"
+526=Atla
+; "Resume"
+527=Devam et
+; "Compare digests..."
+528=Derlemeleri karşılaştır...
+; "Compare Digests"
+529=Derlemeleri karşılaştır
+; "Type digest"
+530=Derleme yaz
+; "Add path..."
+531=Yol ekle...
+; "Add process..."
+532=İşlem ekle...
+; "Process List"
+533=İşlem listesi
+; "Select one or more processes"
+534=Bir veya dah fazla işlem seç
+; "Path"
+535=Yol
+; "Process ID"
+536=İşlem kimliği
+; "Path:"
+537=Yol:
+; "Add path"
+538=Yol ekle
+; "Offset"
+539=Dengele
+; "Calculate entire file"
+540=Tüm dosyaları hesapla
+; "Calculate specified block"
+541=Belirtilen bloğu hesapla
+; "Block size (in bytes)"
+542=Blok boyutu (Bayt)
+; "Basics"
+543=Temel
+; "Advanced"
+544=Gelişmiş
+; "Start calculation immediately after adding files to the queue."
+545=Kuyruğa dosyaları ekledikten sonra hemen hesaplamaya başla.
+; "Add folders recursively by default."
+546=Varsayılan olarak yinelemeli klasörler ekle.
+; "%0 is a service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines."
+; %0 = VirusTotal
+547=%0 URL yolu ile şüpheli dosyaları ücretsiz analiz eden bir hizmettir, virüslerin hızlı algılanmasını kolaylaştırır, kötü amaçlı yazılım, solucan ve trojanleri, bir çok antivirüs motorunu kullanarak tarar.
+; "API key:"
+548=API anahtarı:
+; "Query %0"
+; %0 = VirusTotal
+549=Sorgu %0
+; "Antivirus"
+550=Antivirüs
+; "Result"
+551=Sonuç
+; "View full report"
+552=Tam rapor göster
+; "Report date: %0"
+; %0 = Date and time
+553=Rapor tarihi: %0
+; "Results: %0/%1 (%2%%)"
+; %0 = Total number of positive detections
+; %1 = Total number of antivirus engines
+; %2 = Detection rate in percentage
+554=Sonuçlar: %0/%1 (%2%%)
+; "Connecting..."
+555=Bağlanıyor...
+; "Downloading report..."
+556=Downloading report...
+; "Parsing report..."
+557=Ayrıştırma raporu...
+; "User canceled request."
+558=Kullanıcı isteği iptal edildi.
+; "Could not connect to %0."
+; %0 = VirusTotal
+559=Bağlantı kurulamıyor %0.
+; "Could not parse report."
+560=Rapor ayrıştırılamadı.
+: "API key is invalid."
+561=API anahtarı geçersiz.
+; "API request rate exceeded."
+562=API isteği oranı aştı.
+; "Hash not found."
+563=Hash bulunamadı
+; "Unable to retrieve report from %0 database."
+; %0 = VirusTotal
+564=Rapor alınamıyor %0 veritabanından.
+; "View details"
+565=Ayrıntıları göster
+; "Query %0..."
+566=Sorgu %0...
+; "File name"
+567=Dosya adı
+; "File size"
+568=Dosya boyutu
+; "Block size"
+569=Blok boyutu
+; "Block offset"
+570=Block dengesi
+; "Digests"
+571=Derlemeler
+; "Digest"
+572=Derleme
+; "Hash"
+573=Hash
+; "Comparison digest"
+574=Derleme karşılaştırması
+; "Unknown"
+575=Bilinmeyen
+; "Verify file integrity"
+576=Dosya bütünlüğünü doğrula
+; "Use secure connection"
+577=Güvenli bağlantı kullan
+; "Search online..."
+578=Çevrimiçi arama...
+; "%0 files to add."
+; %0 = number of files to add to file queue
+579=%0 dosya ekli.
+; "Updating file queue. This may take a few minutes..."
+580=Dosya sırası güncelleniyor. Bu işlem birkaç dakika sürebilir...
+; "Search"
+581=Ara
+; "Show"
+582=Göster
+; "All"
+583=Tümü
+; "Invalids"
+584=Geçersizler
+; "Everything"
+585=Harşey
+; "No items found."
+586=Öğe bulunamadı.
+; "Errors"
+587=Hatalar
+; "System Integration"
+588=Sistem Entegrasyonu
+; "Associate with"
+589=İlişkilendir
+; "Reading folder content..."
+590=Klasör içeriği okunuyor...
+; "Click here to select hash algorithms"
+591=Hash algoritmaları seçmek için burayı tıklayın
+; "No hash algorithms selected"
+592=Hash algoritması seçilmedi
+; "Digests match."
+593=Derleme eşleşmesi
+; "Digests do not match."
+594=Derlemeler eşleşmedi.
+; "Information"
+595=Bilgi
+; "File version: %0"
+; %0 = Version of the executable
+596=Dosya sürümü: %0
+; "Build time: %0"
+; %0 = Executable's build time
+597=Yapım tarihi: %0
+; "Text:"
+598=Yazı:
+; "Encoding:"
+599=Kodlama:
+; "Hash Text String"
+600=Hash Metin Dizesi
+; "Search process"
+601=Arama süreci
+; "Other"
+602=Diğer
+; "Show in menu bar"
+603=Menü çubuğunda göster
+; "Type digest(s) for comparison"
+604=Karşılaştırma için derleme yaz
+; "All (%0)"
+605=Tümü (%0)
+; "Invalids (%0)"
+606=Geçersizler (%0)
+; "Errors (%0)"
+607=Hatalar (%0)
+; "Error: file not found"
+608=Hata: dosya bulunamadı
+; "Add files not found to file queue."
+609=Kuyrukta bulunamayan dosyaları ekle
+; "Replace current file queue"
+610=İşlenen dosya kuyruğunu değiştir
+; "Select parent folder"
+611=Ana klasör seç
+; "Options"
+612=Seçenekler
+; "* %0 is a service developed by %1."
+; %0 = VirusTotal
+; %1 = Hispasec Sistemas
+613=* %0 tarafından geliştirilmiş hizmet %1.
+; "Add integration into shell context menu"
+614=Kabuk bağlam menüsüne entegrasyon ekle
+; "Remove integration from shell context menu"
+615=Kabuk bağlam menüsünden entegrasyon sil
+; "Current user only"
+616=Sadece mevcut kullanıcı
+; "Troubleshooting information"
+617=Sorun giderme bilgileri
+; "Enable single window mode"
+618=Tek pencere modu etkinleştir
+; "Analysis of the file is in queue. Try again later."
+619=Dosyanın analiz sırasındadır. Daha sonra tekrar deneyin.
+; "Track file queue progress"
+620=Dosya sırası ilerlemesini izle
+; "Automatically select all files when calculation finishes"
+621=Hesaplama bittiği zaman otomatik olarak tüm dosyaları seçin
+; "Are you sure you want to empty the Reopen list?"
+622=Tekrar açılan listesini boşaltmak istediğinizden emin misiniz?
+; "Max. number of items in Reopen menu:"
+623=Maksimum yeniden açılan öge menüsü:

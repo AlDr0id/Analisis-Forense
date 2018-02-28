@@ -1,0 +1,10 @@
+﻿; Author = person or group responsible for the translation
+Author=4Li
+; LanguageName - name of the language in english
+LanguageName=Korean (The Republic of Korea)
+; NativeName - native name of the language
+NativeName=한국어 (대한민국)
+; AdditionalLocaleIDs
+AdditionalLocaleIDs=ko
+; BiDi - values between 0 and 3 accepted
+BiDi=0

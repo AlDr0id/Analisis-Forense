@@ -1,0 +1,617 @@
+﻿; Menu "Language"
+1=언어
+
+; Menu "Language" > "Automatic"
+2=자동
+
+; Menu "File"
+101=파일(&F)
+
+; Menu "File" > "Open list..."
+102=목록 열기(&O)...
+
+; Menu "File" > "Calculate"
+103=계산(&C)
+
+; Menu "File" > "Exit"
+104=끝내기(&X)
+
+; Menu "File" > "Add"
+105=추가(&A)
+
+; Menu "File" > "Add" > "Files..."
+106=파일...
+
+; Menu "File" > "Add" > "Folder..."
+107=폴더...
+
+; Menu "File" > "Add" > "Path..."
+108=경로...
+
+; Menu "File" > "Add" > "Process..."
+109=프로세스...
+
+; Menu "File" > "Save list..."
+110=목록 저장(&S)...
+
+; Menu "File" > "Hash text string..."
+111=텍스트 문자열 해시(&T)...
+
+; Menu "File" > "Reopen"
+112=다시 열기(&R)
+
+; Menu "File" > "Reopen" > "Empty list..."
+113=빈 목록(&E)...
+
+; Menu "Help"
+121=도움말(&H)
+
+; Menu "Help" > "%0 Help"
+; %0 = Application name
+122=%0 도움말(&H)
+
+; Menu "Help" > "About %0"
+; %0 = Application name
+123=%0 정보(&A)
+
+; Menu "Help" > "Report bug"
+124=버그 보고(&R)
+
+; Menu "Help" > "Troubleshooting information"
+125=문제 해결 정보
+
+; Menu "Edit"
+141=편집(&E)
+
+; Menu "Edit" > "Select all"
+142=모두 선택(&A)
+
+; Menu "Edit" > "Preferences..."
+143=환경 설정(&F)...
+
+; Menu "Edit" > "Copy"
+144=복사(&C)
+
+; Menu "Edit" > "Select hash algorithms"
+145=해시 알고리즘 선택(&H)
+
+; Menu "Search"
+161=검색(&S)
+
+; Menu "Search" > "Find"
+162=찾기(&F)
+
+; Menu "Search" > "Use regular expression"
+163=정규 표현식 사용(&R)
+
+; Menu "Search" > "Search digests"
+164=요약 검색(&D)
+
+; Menu "Search" > "Search online"
+165=온라인 검색(&O)
+
+; Menu "View"
+181=보기(&V)
+
+; Menu "View" > "Show all"
+182=모두 보이기
+
+; Menu "View" > "Show invalids"
+183=무효 보이기
+
+; Menu "View" > "Show errors"
+184=오류 보이기
+
+; Menu "Tools"
+201=도구(&T)
+
+
+
+; About %0
+; %0 = Application name
+301=%0 정보
+
+; All rights reserved.
+302=모든 권리 보유.
+
+; License
+304=라이센스
+
+; Visit website
+305=웹사이트 방문
+
+; Report bug
+306=버그 보고
+
+; "Open" dialog title
+307=열기
+
+; "Open"
+308=열기(&O)
+
+; "Cancel"
+309=취소(&C)
+
+; "File name:" label in "Open" dialog
+310=파일 이름:
+
+; "All files"
+311=모든 파일
+
+; "Translation"
+312=번역
+
+; "Author: %0"
+; %0 = Translation author
+313=번역자: %0
+
+; "Locale: %0"
+; %0 = Locale
+314=로케일: %0
+
+; "Locale ID: %0"
+; %0 = Locale ID (decimal)
+; %1 = Locale ID (hex)
+315=로케일 ID: %0 (%1)
+
+; "Name: %0"
+; %0 = Name of the language in English
+316=영어 이름: %0
+
+; "Native name: %0"
+; %0 = Native name of the language
+317=기본 이름: %0
+
+; "O&K" button
+318=확인(&K)
+
+; "Close"
+319=닫기
+
+; "Refresh"
+320=새로 고침
+
+; "Select all"
+321=모두 선택
+
+; "Select none"
+322=선택 없음
+
+; "Add"
+323=추가
+
+; "Preferences"
+324=환경 설정
+
+; "< Previous"
+325=< 이전
+
+; "Next >"
+326=다음 >
+
+; "Open"
+327=열기
+
+; "All supported files"
+328=지원하는 모든 파일
+
+; "&Save" button
+329=저장(&S)
+
+; "Save as" dialog title
+330=다른 이름으로 저장
+
+; "Associate file types"
+331=파일 종류 연결
+
+; "Remove file associations"
+332=파일 연결 해제
+
+; "Copy to clipboard"
+333=클립보드에 복사
+
+; "Retry"
+334=다시 시도
+
+; "Upload"
+335=업로드
+
+
+
+; "Add files..."
+501=파일 추가...
+
+; "Add folder..."
+502=폴더 추가...
+
+; "Add files"
+503=파일 추가
+
+; "Remove"
+504=제거
+
+; "Remove all"
+505=모두 제거
+
+; "Clear"
+506=지우기
+
+; "Show in Windows Explorer"
+507=Windows 탐색기에 보이기
+
+; "Calculating... %0 file(s) remaining."
+; %0 = Number of files remaining
+508=계산하는 중... %0 개 파일 남음.
+
+; "Calculating... %0 %%"
+; %0 = Progress (integer)
+509=계산하는 중... %0 %%
+
+; "Calculating... %0 %% [ Paused ]"
+; %0 = Progress (integer)
+510=계산하는 중... %0 %% [ 잠시 멈춤 ]
+
+; "Queued"
+511=대기 중
+
+; "Error"
+513=오류
+
+; "Error: cannot open file"
+514=오류: 파일을 열 수 없습니다.
+
+; "Paused"
+515=잠시 멈춤
+
+; "Pause"
+516=잠시 멈춤
+
+; "%0 file(s)."
+517=%0 개 파일.
+
+; "Select files"
+518=파일 선택
+
+; "Calculate"
+519=계산
+
+; "Stop"
+520=멈춤
+
+; "Canceled"
+521=취소됨
+
+; "Select hash algorithms"
+522=해시 알고리즘 선택
+
+; "Select folder"
+523=폴더 선택
+
+; "Drag files here or..."
+524=여기에 파일을 떨궈놓거나...
+
+; "Include sub-folders"
+525=하위 폴더 포함
+
+; "Skip"
+526=건너뛰기
+
+; "Resume"
+527=이어서 계속
+
+; "Compare digests..."
+528=요약 비교...
+
+; "Compare Digests"
+529=요약 비교
+
+; "Type digest"
+530=요약 종류
+
+; "Add path..."
+531=경로 추가...
+
+; "Add process..."
+532=프로세스 추가...
+
+; "Process List"
+533=프로세스 목록
+
+; "Select one or more processes"
+534=하나 이상의 프로세스를 선택하세요.
+
+; "Path"
+535=경로
+
+; "Process ID"
+536=프로세스 ID
+
+; "Path:"
+537=경로:
+
+; "Add path"
+538=경로 추가
+
+; "Offset"
+539=오프셋
+
+; "Calculate entire file"
+540=파일 전체 계산
+
+; "Calculate specified block"
+541=지정한 블럭 계산
+
+; "Block size (in bytes)"
+542=블럭 크기 (바이트)
+
+; "Basics"
+543=기본
+
+; "Advanced"
+544=고급
+
+; "Start calculation immediately after adding files to the queue."
+545=파일을 대기열에 추가한 즉시 계산 시작
+
+; "Add folders recursively by default."
+546=기본적으로, 재귀적으로 폴더 추가
+
+; "%0 is a service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines."
+; %0 = VirusTotal
+547=%0(은)는 안티 바이러스 엔진으로 의심스러운 파일과 주소(URL)를 분석해서 바이러스, 웜, 트로이 목마 및 모든 종류의 악성 코드를 빠르게 감지하는 서비스입니다.
+
+; "API key:"
+548=API 키:
+
+; "Query %0"
+; %0 = VirusTotal
+549=%0 조회
+
+; "Antivirus"
+550=안티 바이러스
+
+; "Result"
+551=결과
+
+; "View full report"
+552=전체 보고서 보기
+
+; "Report date: %0"
+; %0 = Date and time
+553=보고서 날짜: %0
+
+; "Results: %0/%1 (%2%%)"
+; %0 = Total number of positive detections
+; %1 = Total number of antivirus engines
+; %2 = Detection rate in percentage
+554=결과: %0/%1 (%2%%)
+
+; "Connecting..."
+555=연결하는 중...
+
+; "Downloading report..."
+556=보고서 다운로드하는 중...
+
+; "Parsing report..."
+557=보고서 구문 분석하는 중...
+
+; "User canceled request."
+558=사용자 요청으로 취소됐습니다.
+
+; "Could not connect to %0."
+; %0 = VirusTotal
+559=%0에 연결할 수 없습니다.
+
+; "Could not parse report."
+560=보고서의 구문을 분석할 수 없습니다.
+
+: "API key is invalid."
+561=API 키가 유효하지 않습니다.
+
+; "API request rate exceeded."
+562=API 요청 속도가 초과됐습니다.
+
+; "Hash not found."
+563=해시를 찾을 수 없습니다.
+
+; "Unable to retrieve report from %0 database."
+; %0 = VirusTotal
+564=%0 데이터베이스로부터 보고서를 검색할 수 없습니다.
+
+; "View details"
+565=자세한 내용 보기
+
+; "Query %0..."
+566=%0 조회...
+
+; "File name"
+567=파일 이름
+
+; "File size"
+568=파일 크기
+
+; "Block size"
+569=블럭 크기
+
+; "Block offset"
+570=블럭 오프셋
+
+; "Digests"
+571=요약
+
+; "Digest"
+572=요약
+
+; "Hash"
+573=해시
+
+; "Comparison digest"
+574=요약 비교
+
+; "Unknown"
+575=알 수 없음
+
+; "Verify file integrity"
+576=파일 무결성 검증
+
+; "Use secure connection"
+577=보안 연결 사용
+
+; "Search online..."
+578=온라인 검색...
+
+; "%0 files to add."
+; %0 = number of files to add to file queue
+579=%0 개 파일이 추가됐습니다.
+
+; "Updating file queue. This may take a few minutes..."
+580=파일 대기열 업데이트하는 중. 몇 분 정도 걸릴 수 있습니다...
+
+; "Search"
+581=검색
+
+; "Show"
+582=보이기
+
+; "All"
+583=모두
+
+; "Invalids"
+584=무효
+
+; "Everything"
+585=무엇이든
+
+; "No items found."
+586=찾은 항목이 없습니다.
+
+; "Errors"
+587=오류
+
+; "System Integration"
+588=시스템 통합
+
+; "Associate with"
+589=연결 대상
+
+; "Reading folder content..."
+590=폴더 내용물 읽는 중...
+
+; "Click here to select hash algorithms"
+591=해시 알고리즘을 선택하려면, 여기를 누르세요.
+
+; "No hash algorithms selected"
+592=선택한 해시 알고리즘이 없습니다.
+
+; "Digests match."
+593=요약이 일치합니다.
+
+; "Digests do not match."
+594=요약이 일치하지 않습니다.
+
+; "Information"
+595=정보
+
+; "File version: %0"
+; %0 = Version of the executable
+596=파일 버전: %0
+
+; "Build time: %0"
+; %0 = Executable's build time
+597=빌드 시간: %0
+
+; "Text:"
+598=텍스트:
+
+; "Encoding:"
+599=인코딩:
+
+; "Hash Text String"
+600=텍스트 문자열 해시
+
+; "Search process"
+601=프로세스 검색
+
+; "Other"
+602=기타
+
+; "Show in menu bar"
+603=메뉴 표시줄에 보이기
+
+; "Type digest(s) for comparison"
+604=비교할 요약 종류
+
+; "All (%0)"
+605=모두 (%0)
+
+; "Errors (%0)"
+607=오류 (%0)
+
+; "Error: file not found"
+608=오류: 파일을 찾을 수 없습니다.
+
+; "Add files not found to file queue."
+609=찾을 수 없는 파일도 대기열에 추가
+
+; "Replace current file queue"
+610=현재 파일 대기열 교체
+
+; "Select parent folder"
+611=상위 폴더 선택
+
+; "Options"
+612=옵션
+
+; "Add integration into shell context menu"
+614=쉘 컨텍스트 메뉴에 통합 추가
+
+; "Remove integration from shell context menu"
+615=쉘 컨텍스트 메뉴에서 통합 제거
+
+; "Current user only"
+616=현재 사용자만
+
+; "Troubleshooting information"
+617=문제 해결 정보
+
+; "Enable single window mode"
+618=단일 창 방식 사용
+
+; "Analysis of the file is in queue. Try again later."
+619=대기열의 파일을 분석하는 중입니다. 나중에 다시 시도하세요.
+
+; "Track file queue progress"
+620=파일 대기열 프로세스 추적
+
+; "Automatically select all files when calculation finishes"
+621=계산을 마쳤을 때, 자동으로 모든 파일 선택
+
+; "Are you sure you want to empty the Reopen list?"
+622=다시 열기 목록을 비울까요?
+
+; "Max. number of items in Reopen menu:"
+623=다시 열기 메뉴내 항목의 최대 개수:
+
+; "Canceling..."
+624=취소하는 중...
+
+; "* %0 is a subsidiary of %1."
+; %0 = VirusTotal
+; %1 = Google
+643=* %0 은 %1 의 자회사입니다.
+
+; "Uploading... %0%%"
+; %0 = percentage of file uploaded
+657=업로드하는 중... %0%%
+
+; "Upload complete. Opening report..."
+658=업로드 완료. 보고서 여는 중...
+
+; "Waiting for a response..."
+659=응답 기다리는 중...
+
+; "None of the files in the queue were calculated yet."
+660=대기열에 있는 파일 어느 것도 아직 계산되지 않았습니다.
+
+; "File not found. Do you want to remove the reference from the Reopen list?"
+663=파일을 찾을 수 없습니다. 다시 열기 목록에서 참조를 제거할까요?

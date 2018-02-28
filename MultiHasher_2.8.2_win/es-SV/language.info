@@ -1,0 +1,10 @@
+﻿; Author = person or group responsible for the translation
+Author=Manuel Rivas (MNL_Antony)
+; LanguageName - name of the language in english
+LanguageName=Spanish (Latin America)
+; NativeName - native name of the language
+NativeName=Español (Latinoamérica)
+; AdditionalLocaleIDs
+AdditionalLocaleIDs=es
+; BiDi - values between 0 and 3 accepted
+BiDi=0

@@ -1,0 +1,16 @@
+﻿; Menu "파일" > "목록 열기..."
+102=Ctrl+O
+; Menu "파일" > "목록 저장..."
+110=Ctrl+Shift+S
+; Menu "편집" > "모두 선택"
+142=Ctrl+A
+; Menu "편집" > "복사"
+144=Ctrl+C
+; Menu "검색" > "찾기"
+162=Ctrl+F
+; Menu "편집" > "지우기" > "요약"
+572=Ctrl+Del
+; Menu "편집" > "지우기" > "요약 비교"
+574=Ctrl+Shift+C
+; Menu "편집" > "지우기" > "모두"
+583=Ctrl+Shift+Del

@@ -1,0 +1,227 @@
+﻿2.8.2:
+- Fixed critical bugs in most hash algorithms (introduced in v2.8) that could result in wrong hash values being calculated
+- Minor UI tweaks
+- Fixed minor bugs
+
+2.8.1:
+- Forced use of relative paths when saving verification files in the same drive as the hashed files
+- Fixed: some verification files may not be saved in the correct format (Vista and later)
+- Fixed: couple of issues related to VirusTotal service
+- Fixed: closing MultiHasher causes MRU list to be erased
+- Fixed minor bugs
+
+2.8:
+- Improved compatibility with Windows 10
+- Added missing SHA-2 variants (SHA-224, SHA-512/224 and SHA-512/256)
+- Added support for Microsoft File Checksum Integrity Verifier (FCIV) database
+- Added support for Unix-style and BSD-style checksum files
+- Added option to display digests in base16 (lower or upper case), base32 or base64
+- Added German translation
+- Minor UI tweaks
+- Fixed several bugs
+
+2.7.1:
+- Improved compatibility with Windows 10 Technical Preview
+- Fixed bugs related to processing of command-line arguments
+- Fixed hang when using "Search Online" under certain circumstances
+- Fixed: setting max. number of items in Reopen menu to 0 does not work
+- Fixed: potential crash when looking for translations
+- Fixed minor bugs
+
+2.7:
+- "Save list" initial directory is now based on the files with calculated hashes
+- "Process list" window now combines duplicates into a single item
+- Fixed: context menu's "Skip" item is broken
+- Fixed minor bugs
+
+2.6.2:
+- Fixed: previously calculated hashes may be discarded when doing calculations for newly selected algorithms
+- Fixed minor bugs
+
+2.6.1:
+- Added Korean translation
+- Updated Dutch translation
+- Fixed: file system redirection under Windows 64-bit is not handled properly
+- Fixed minor bugs
+
+2.6:
+- Added Polish translation
+- Option to save to SFV is now unavailable if CRC32 checksum is not used for calculation
+- Fixed: search online in "Query VirusTotal" window is broken
+- Fixed: certain paths are not handled correctly when using "Add Path" dialog
+- Fixed: some strings cannot be translated
+- Fixed minor bugs
+
+2.5.3:
+- Digest values are now also calculated for empty files
+- Fixed: access violation when saving verification files
+- Fixed minor bugs
+
+2.5.2:
+- Added Dutch and French translations
+- Added list of Locale IDs to documentation
+- Added key shortcut to "Save list" menu item
+- Fixed: RIPEMD-160 hash is not calculated when loading verification files
+
+2.5.1:
+- Added Greek and Italian translations
+- Fixed: incorrect ID assigned to one item in the Portuguese (Brazil) translation
+- Fixed minor bugs
+
+2.5:
+- Added English (United Kingdom) language
+- Improved Windows 8.1 and Server 2012 R2 support
+- Increased VirusTotal upload file size limit to 64MB
+- Improved UI responsiveness
+- Changed encoding of checksum files to UTF-8
+- Installer rewritten
+- Improved shell context menu integration
+- Fixed: pause button doesn't always pause calculation
+- Fixed: /PID argument not working
+- Fixed: some strings in "Query VirusTotal" window cannot be translated
+- Fixed minor bugs
+
+2.4:
+- Added option to extend search to hash values
+- Added "Search online"
+- Added Turkish translation
+- Improved support for Windows 8 and Windows Server 2012
+- Improved performance of MD5 algorithm
+- Introduced other minor performance improvements
+- Search options are now persistent
+- Minor UI tweaks
+- Fixed minor bugs
+
+2.3:
+- Added ability to write SFV files
+- Added RIPEMD-160 algorithm
+- Minor UI tweaks
+- Fixed minor bugs
+
+2.2.3:
+- Added Russian translation
+- Fixed some localization related bugs
+
+2.2.2:
+- Fixed incomplete MRU implementation
+
+2.2.1:
+- Improved file queue selection speed
+- Enabled multiple file selection in "Open List" dialog (Vista or later)
+- Minor UI tweaks
+- Fixed display of non-ANSI characters in the output box
+
+2.2:
+- Added Spanish (Latin America) translation
+- Added track file queue progress
+- Added "Select all" button to toolbar
+- Added option to auto-select files when calculation finishes
+- Minor UI tweaks
+- Fixed always show button to upload to VirusTotal even when file exceeds upload size limit
+- Fixed minor bugs
+
+2.1:
+- Added optional single window mode
+- Now using VirusTotal Public API version 2.0
+- Updated file size limit when uploading to VirusTotal (<32MB)
+- Reduced exe size
+- Fixed minor bugs
+
+2.0:
+- Minor UI tweaks
+- Fixed minor bugs
+
+1.9 Beta:
+- Added option to integrate MultiHasher into shell context menu
+- Added ability to upload files (<20MB) to VirusTotal (API key required)
+- Added preliminary support for Windows 8 and Windows Server 8
+- Added "Troubleshooting information" window
+- Minor UI tweaks
+- Fixed minor bugs
+
+1.1:
+* MultiHasher.exe
+  - Added option to select different parent folder when opening checksum files
+  - Minor UI tweaks
+  - Fixed minor bugs
+
+1.0.1:
+* MultiHasher.exe
+  - Minor UI tweaks
+  - Improved error handling
+  - Fixed minor bugs
+
+1.0:
+* MultiHasher.exe
+  - Improved folder enumeration
+  - Added ability to manually type and compare two digests
+  - Minor UI improvements
+  - Removed Traditional Chinese translation (outdated)
+  - Fixed minor bugs
+
+1.0 Beta 2:
+* MultiHasher.exe
+  - Added ability to hash text string
+  - Improved UI performance
+  - Portable mode can now be enabled and configured with "/SETUP /PORTABLE" arguments
+  - Other minor UI improvements
+  - Fixed missing ASLR flag in PE header
+  - Fixed minor bugs
+
+1.0 Beta:
+* mhasher.exe
+  - Added CRC32 checksum algorithm
+  - Fixed several memory and file handle leaks
+  - Fixed folder content enumeration
+  - Fixed minor bugs
+* MultiHasher.exe
+  - Added CRC32 checksum algorithm
+  - Added ability to open SFV files
+  - Added option to connect to VirusTotal via HTTPS (enabled by default)
+  - Added search with support for regular expressions
+  - Added options to (un)associate checksum files with MultiHasher
+  - Updated Portuguese translation, in conformity with the Orthographic Agreement of 1990
+  - Fixed occasional memory leak when closing application while calculation is in progress
+  - Small UI improvements
+  - Fixed minor bugs
+
+0.3:
+* mhasher.exe
+  - Added new language: "Traditional Chinese"
+  - Fixed minor bugs
+* MultiHasher.exe
+  - Added support for creation and verification of checksum files (*.md5, *.sha1, *.mhx, etc.)
+  - Added new language: "Traditional Chinese" (translation is incomplete)
+  - Added ability to query VirusTotal database
+  - Added "Preferences" dialog
+  - Improved performance of "Select folder" dialog
+  - Minor improvement in the localization system
+  - Small UI improvements
+  - Fixed minor bugs
+
+0.2.1:
+* mhasher.exe
+  - Added ability to add processes to the file list
+  - Added more control over what to calculate (entire file or specified block)
+* MultiHasher.exe
+  - Added ability to add processes to the file list
+  - Added more control over what to calculate (entire file or specified block)
+  - Added "Validate Digest" to context menu
+  - Fixed minor bugs
+
+
+0.2:
+* mhasher.exe
+  - Added progress report
+  - Added optional flag to suppress progress report
+  - Added support for hash calculation of multiple files
+  - Added support for batch processing
+  - Added localization support
+  - Fixed access violation when sha512 is selected
+  - Fixed minor bugs
+* MultiHasher.exe
+  - Added pause/resume calculation
+  - Added support for hash calculation of multiple files
+  - Added support for NT path names
+  - Major UI overhaul
+  - Fixed minor bugs

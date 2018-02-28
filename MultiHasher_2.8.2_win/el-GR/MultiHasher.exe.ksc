@@ -1,0 +1,14 @@
+﻿; Menu "File" > "Άνοιγμα λίστας..."
+102=Ctrl+O
+; Menu "Edit" > "Επιλογή όλων"
+142=Ctrl+A
+; Menu "Edit" > "Αντιγραφή"
+144=Ctrl+C
+; Menu "Search" > "Αναζήτηση"
+162=Ctrl+F
+; Menu "Edit" > "Καθαρισμός" > "Σύνοψη"
+572=Ctrl+Del
+; Menu "Edit" > "Καθαρισμός" > "Συνοπτική σύγκριση"
+574=Ctrl+Shift+C
+; Menu "Edit" > "Καθαρισμός" > "Όλα"
+583=Ctrl+Shift+Del

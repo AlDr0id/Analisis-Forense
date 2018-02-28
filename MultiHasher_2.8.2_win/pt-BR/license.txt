@@ -1,0 +1,46 @@
+﻿Contrato de licença de software
+
+1. Contratos e Termos
+1.1 O uso de software da abelhadigital.com por parte do usuário está sujeito aos termos de um contrato entre o usuário e a abelhadigital.com. Este documento explica como é constituído o contrato e define alguns dos seus termos.
+1.2 Salvo disposição em contrário acordada por escrito com a abelhadigital.com, o contrato com a abelhadigital.com incluirá sempre, no mínimo, os termos de utilização apresentados neste documento. Estes são referidos em seguida como “Termos”.
+1.2 Exceto se acordado de outra forma por escrito pela abelhadigital.com, o contrato do usuário com a abelhadigital.com incluirá sempre, no mínimo, os termos e condições apresentados neste documento. Esses termos serão denominados a seguir como “Termos”.
+1.4 Os Termos formam um acordo com efeito jurídico entre o usuário e a abelhadigital.com com relação ao uso do Software por parte do usuário. É importante que o usuário os leia com atenção.
+
+2. Aceitação dos Termos
+2.1 Para usar o Software, o usuário deverá primeiro concordar com os Termos. Não é permitido o uso do Software por parte do usuário se ele não aceitar os Termos.
+2.2 O usuário pode aceitar os Termos:
+(A) clicando para aceitar ou concordar, no caso de essa opção ser disponibilizada pela abelhadigital.com na interface do usuário; ou
+(B) usando efetivamente o Software. Nesse caso, o usuário compreende e aceita que a abelhadigital.com considerará o seu uso do Software uma aceitação dos Termos a partir desse momento.
+
+3. Idioma dos Termos
+3.1 No caso de a abelhadigital.com fornecer uma tradução da versão em língua inglesa dos Termos, o usuário concorda que essa tradução é fornecida apenas para sua conveniência e que a versão em língua inglesa dos Termos regerá o seu relacionamento com a abelhadigital.com.
+3.2 Se houver alguma contradição entre o que indica a versão em inglês dos Termos e o que indica uma tradução, a versão em inglês deverá prevalecer.
+
+4. Licença da abelhadigital.com
+4.1 A abelhadigital.com concede ao usuário uma licença pessoal, internacional, isenta de royalties, não atribuível e não exclusiva para utilizar o software fornecido ao usuário pela abelhadigital.com. Essa licença tem como único objetivo permitir o uso, por parte do usuário, dos benefícios do Software tal como são fornecidos pela abelhadigital.com, da forma permitida pelos Termos.
+4.2 Sujeito à seção 1.2, o usuário não poderá (nem poderá permitir a outra pessoa) copiar, modificar ou criar uma obra derivada do código-fonte, tampouco realizar engenharia inversa, descompilar ou, de algum outro modo, tentar extrair o código-fonte do Software ou de qualquer parte que o componha, a menos que seja expressamente permitido ou previsto por lei, ou que o usuário tenha sido especificamente autorizado por escrito pela abelhadigital.com a fazê-lo.
+4.3 Sujeito à seção 1.2, a menos que a abelhadigital.com tenha concedido uma permissão específica, por escrito, para fazê-lo, o usuário não poderá transferir (ou conceder uma sublicença de) seus direitos de utilização do Software, conceder uma garantia relativa aos seus direitos de utilização do Software ou, de algum outro modo, transferir qualquer parte dos seus direitos de utilização do Software.
+
+5. EXCLUSÃO DE GARANTIAS
+5.1 NADA NESTES TERMOS, INCLUSIVE AS SEÇÕES 5 E 6, EXCLUIRÁ OU LIMITARÁ A RESPONSABILIDADE OU GARANTIA DA ABELHADIGITAL.COM POR PERDAS QUE NÃO POSSAM SER LEGALMENTE EXCLUÍDAS OU LIMITADAS PELA LEI APLICÁVEL. ALGUMAS JURISDIÇÕES NÃO PERMITEM A EXCLUSÃO DE CERTAS GARANTIAS OU CONDIÇÕES OU A LIMITAÇÃO OU EXCLUSÃO DE RESPONSABILIDADE POR PERDAS OU DANOS CAUSADOS POR NEGLIGÊNCIA, QUEBRA DE CONTRATO OU VIOLAÇÃO DOS TERMOS IMPLÍCITOS OU DANOS INCIDENTAIS OU EMERGENTES. CONSEQÜENTEMENTE, APENAS AS LIMITAÇÕES QUE FOREM PERMITIDAS POR LEI NA SUA JURISDIÇÃO SE APLICARÃO AO USUÁRIO, E A NOSSA RESPONSABILIDADE SERÁ LIMITADA AO MÁXIMO PERMITIDO POR LEI.
+5.2 O USUÁRIO ENTENDE E CONCORDA EXPRESSAMENTE QUE USA O SOFTWARE POR CONTA E RISCO PRÓPRIOS E QUE O SOFTWARE É FORNECIDO “NA FORMA EM QUE SE ENCONTRA” E “DE ACORDO COM A DISPONIBILIDADE”.
+5.3 ESPECIFICAMENTE, A ABELHADIGITAL.COM, AS SUAS SUBSIDIÁRIAS E AFILIADAS E OS SEUS LICENCIANTES NÃO GARANTEM QUE:
+(A) O USO DO SOFTWARE ATENDERÁ AOS SEUS REQUISITOS;
+(B) O USO DO SOFTWARE SERÁ ININTERRUPTO, PONTUAL, SEGURO E ISENTO DE ERROS;
+(C) TODAS AS INFORMAÇÕES OBTIDAS POR VOCÊ EM DECORRÊNCIA DO USO DO SOFTWARE SERÃO PRECISAS OU CONFIÁVEIS; E
+(D) OS DEFEITOS DE FUNCIONAMENTO OU NOS RECURSOS DE QUALQUER SOFTWARE FORNECIDO AO USUÁRIO SERÃO CORRIGIDOS.
+5.4 NENHUM CONSELHO OU INFORMAÇÃO, SEJA ORAL OU ESCRITO, OBTIDO PELO USUÁRIO DA ABELHADIGITAL.COM CRIARÁ QUALQUER GARANTIA QUE NÃO ESTEJA EXPRESSAMENTE DECLARADA NOS TERMOS.
+5.5 A ABELHADIGITAL.COM AINDA SE EXCLUI EXPRESSAMENTE DE TODAS AS GARANTIAS OU CONDIÇÕES DE QUALQUER NATUREZA, SEJAM ELAS EXPRESSAS OU IMPLÍCITAS, INCLUINDO, ENTRE OUTROS, AS GARANTIAS IMPLÍCITAS E AS CONDIÇÕES DE COMERCIALIDADE, A ADEQUAÇÃO PARA UM PROPÓSITO PARTICULAR E A NÃO-VIOLAÇÃO.
+
+6. LIMITAÇÃO DE RESPONSABILIDADE
+6.1 SUJEITO À CLÁUSULA GERAL MENCIONADA NO PARÁGRAFO 13.1 ACIMA, O USUÁRIO ENTENDE E CONCORDA QUE A ABELHADIGITAL.COM, AS SUAS SUBSIDIÁRIAS E AFILIADAS E OS RESPECTIVOS LICENCIANTES NÃO SERÃO RESPONSÁVEIS PERANTE O USUÁRIO POR:
+(A) QUAISQUER DANOS DIRETOS, INDIRETOS, INCIDENTAIS, ESPECIAIS, EMERGENTES OU EXEMPLARES QUE POSSAM TER SIDO INCORRIDOS PELO USUÁRIO, CAUSADOS DE ALGUMA FORMA E SOB QUALQUER TEORIA DE RESPONSABILIDADE. ISSO INCLUIRÁ, MAS NÃO SE LIMITARÁ A, QUALQUER LUCRO CESSANTE (INCORRIDO DIRETA OU INDIRETAMENTE), QUALQUER PERDA RELACIONADA COM A BOA-FÉ OU REPUTAÇÃO COMERCIAL, QUALQUER PERDA DE DADOS QUE O USUÁRIO POSSA SOFRER, CUSTOS DE AQUISIÇÃO DE BENS OU SERVIÇOS OU OUTRA PERDA INTANGÍVEL;
+6.2 AS LIMITAÇÕES DE RESPONSABILIDADE DA ABELHADIGITAL.COM PERANTE O USUÁRIO, MENCIONADAS NO PARÁGRAFO 6.1 ACIMA, SERÃO APLICÁVEIS INDEPENDENTEMENTE DE A ABELHADIGITAL.COM TER OU NÃO SIDO NOTIFICADO OU ESTAR CIENTE DA POSSIBILIDADE DE OCORRÊNCIA DE TAIS PERDAS.
+
+7. Termos jurídicos gerais
+7.1 Os Termos constituem o contrato integral entre o usuário e a abelhadigital.com e regem a utilização do Software, substituindo na íntegra quaisquer contratos anteriores estabelecidos entre o usuário e a abelhadigital.com em relação ao Software.
+7.2 O usuário concorda que, se a abelhadigital.com não exercer ou utilizar qualquer direito legal ou remédio judicial contido nos Termos (ou ao qual a abelhadigital.com tenha direito nos termos de qualquer lei aplicável), isso não será considerado como uma renúncia formal da abelhadigital.com aos direitos ou aos remédios judiciais, mantendo-se tais direitos disponíveis para todos os devidos efeitos.
+7.3 Se qualquer tribunal, tendo jurisdição para decidir sobre essa questão, determinar que qualquer cláusula destes Termos é inválida, tal cláusula será removida dos Termos sem afetar a validade do restante dos Termos. As cláusulas restantes dos Termos continuarão sendo válidas e aplicáveis.
+7.4 Os Termos e o relacionamento entre o usuário e a abelhadigital.com conforme os Termos serão regidos pelas leis de Portugal, independentemente do conflito de provisões legais. Você e a abelhadigital.com concordam em submeter à exclusiva jurisdição dos tribunais de Portugal, a resolução de quaisquer questões legais resultantes dos Termos. Não obstante o referido, você concorda que a abelhadigital.com poderá ainda recorrer a remédios judiciais cautelares (ou um tipo equivalente de medida legal urgente) em qualquer jurisdição.
+
+22 de Julho, 2010

@@ -1,0 +1,8 @@
+﻿; Author = person or group responsible for the translation
+Author=Yüksel AÇIKGÖZ
+; LanguageName - name of the language in english
+LanguageName=Turkish (Turkey)
+; NativeName - native name of the language
+NativeName=Türkçe (Türkiye)
+; BiDi - values between 0 and 3 accepted
+BiDi=0

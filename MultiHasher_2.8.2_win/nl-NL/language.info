@@ -1,0 +1,10 @@
+﻿; Author = person or group responsible for the translation
+Author=abelhadigital.com
+; LanguageName - name of the language in english
+LanguageName=Dutch (Nederlands)
+; NativeName - native name of the language
+NativeName=Dutch (Nederlands)
+; AdditionalLocaleIDs
+AdditionalLocaleIDs=nl
+; BiDi - values between 0 and 3 accepted
+BiDi=0

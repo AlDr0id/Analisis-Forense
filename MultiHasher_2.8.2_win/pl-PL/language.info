@@ -1,0 +1,10 @@
+﻿; Author = person or group responsible for the translation
+Author=Henryk Majka
+; LanguageName - name of the language in english
+LanguageName=Polish
+; NativeName - native name of the language
+NativeName=Polski (Polska)
+; AdditionalLocaleIDs
+AdditionalLocaleIDs=pl
+; BiDi - values between 0 and 3 accepted
+BiDi=0

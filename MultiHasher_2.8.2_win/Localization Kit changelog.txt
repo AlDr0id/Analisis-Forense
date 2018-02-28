@@ -1,0 +1,192 @@
+﻿2.8:
+	* Documentation updated
+	* Added to "MultiHasher.exe.lng":
+		650=Other algorithms
+		651=Display digest value as:
+		652=Sample: %0
+		661=Hexadecimal (lower case)
+		662=Hexadecimal (upper case)
+		664=Could not open file.
+		665=Cannot open file. Reason: access denied.
+		666=Cannot open file. Reason: unrecognized file format. Remove file from the recent list?
+		667=The file does not contain relevant data. Remove file from the recent list?
+		668=Cannot save file. Reason: access denied.
+		669=Cannot save file. Reason: internal error.
+2.6:
+	* Added to "MultiHasher.exe.lng":
+		659=Waiting for a response...
+		660=None of the files in the queue were calculated yet.
+		663=File not found. Do you want to remove the reference from the Reopen list?
+2.5.2:
+	* Added to "MultiHasher.exe.ksc":
+		110=Ctrl+Shift+S
+2.5:
+	* Added to "MultiHasher.exe.lng":
+		334=Retry
+		335=Upload
+		657=Uploading... %0%%
+		658=Upload complete. Opening report...
+	* Removed from "MultiHasher.exe.lng":
+		613
+2.4:
+	* Added to "MultiHasher.exe.lng":
+		164=Search &digests
+		165=Search &online
+		624=Cancelling...
+		643=* %0 is a subsidiary of %1.
+2.2.2
+	* Added to "MultiHasher.exe.lng":
+		112=&Reopen
+		113=&Empty list...
+		622=Are you sure you want to empty the Reopen list?
+		623=Max. number of items in Reopen menu:
+2.2:
+	* Added to "MultiHasher.exe.lng":
+		620=Track file queue progress
+		621=Automatically select all files when calculation finishes
+2.1:
+	* Added to "MultiHasher.exe.lng":
+		618=Enable single window mode
+		619=Analysis of the file is in queue. Try again later.
+1.9 Beta:
+	* Added "MultiHasherShellEx.dll.lng"
+	* Added "MultiHasherShellEx64.dll.lng"
+	* Added to "MultiHasher.exe.lng":
+		125=Troubleshooting information
+		333=Copy to clipboard
+		614=Add integration into shell context menu
+		615=Remove integration from shell context menu
+		616=Current user only
+		617=Troubleshooting information
+	* Changed in "MultiHasher.exe.lng":
+		332=Remove file assocations
+1.0.2:
+	* Added to "MultiHasher.exe.lng":
+		610=Replace current file queue
+		611=Select parent folder
+		612=Options
+		613=* %0 is a service developed by %1.
+1.0.1:
+	* Added to "MultiHasher.exe.lng":
+		605=All (%0)
+		606=Invalids (%0)
+		607=Errors (%0)
+		608=Error: file not found
+		609=Add files not found to file queue
+1.0.0:
+	* Added to "MultiHasher.exe.lng":
+		201=&Tools
+		601=Search process
+		602=Other
+		603=Show in menu bar
+		604=Type digest(s) for comparison
+	* Changed in "MultiHasher.exe.lng":
+		528=Compare digests...
+	* Added to "MultiHasher.exe.ksc":
+		162=Ctrl+F
+0.9.1:
+	* Added to "MultiHasher.exe.lng":
+		111=Hash &text string...
+		598=Text:
+		599=Encoding:
+		600=Hash Text String
+0.9:
+	* Added to "mhasher.exe.lng":
+		108=path
+	* Changed in "mhasher.exe.lng":
+		105=Examples of supported path names:
+	* Added to "MultiHasher.exe.lng":
+		144=&Copy
+		145=Select &hash algorithms
+		161=&Search
+		162=&Find
+		163=Use &regular expression
+		181=&View
+		182=Show all
+		183=Show invalids
+		184=Show errors
+		331=Associate file types
+		332=Remove integration
+		577=Use secure connection
+		578=Search online...
+		579=%0 files to add.
+		580=Updating file queue. This may take a few minutes...
+		581=Search
+		582=Show
+		583=All
+		584=Invalids
+		585=Everything
+		586=No items found.
+		587=Errors
+		588=System Integration
+		589=Associate with
+		590=Reading folder content...
+		591=Click here to select hash algorithms
+		592=No hash algorithms selected
+		593=Digests match.
+		594=Digests do not match.
+		595=Information
+		596=File version: %0
+		597=Build time: %0
+	* Changed in "MultiHasher.exe.lng":
+		506=Clear
+		522=Select hash algorithms
+		547=%0 is a service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines.
+	* Added to "MultiHasher.exe.ksc":
+		572=Ctrl+Del
+		574=Ctrl+Shift+C
+		583=Ctrl+Shift+Del
+0.3:
+	* Added to "MultiHasher.exe.lng":
+		105=&Add
+		106=Files...
+		107=Folder...
+		108=Path...
+		109=Process...
+		110=&Save list...
+		143=Pre&ferences...
+		324=Preferences...
+		325=< Previous
+		326=Next >
+		327=Open
+		328=All supported files
+		329=&Save
+		330=Save as
+		543=Basics
+		544=Advanced
+		545=Start calculation immediately after adding files to the queue.
+		546=Add folders recursively by default.
+		547=Virustotal is a service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines.
+		548=API key:
+		549=Query %0
+		550=Antivirus
+		551=Result
+		552=View full report
+		553=Report date: %0
+		554=Results: %0/%1 (%2%%)
+		555=Connecting...
+		556=Downloading report...
+		557=Parsing report...
+		558=User canceled request.
+		559=Could not connect to %0.
+		560=Could not parse report.
+		561=API key is invalid.
+		562=API request rate exceeded.
+		563=Hash not found.
+		564=Unable to retrieve report from %0 database.
+		565=View details
+		566=Query %0
+		567=File name
+		568=File size
+		569=Block size
+		570=Block offset
+		571=Digests
+		572=Digest
+		573=Hash
+		574=Comparison digest
+		575=Unknown
+		576=Verify file integrity
+	* Changed in "MultiHasher.exe.lng":
+		102=&Open list...
+	* Changed in "mhasher.exe.lng":
+		107=Consult the documentation for a complete list of command-line arguments.

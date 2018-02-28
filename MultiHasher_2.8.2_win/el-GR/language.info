@@ -1,0 +1,10 @@
+﻿; Author = person or group responsible for the translation
+Author=Νίκος Μαραγκός
+; LanguageName - name of the language in english
+LanguageName=Greek
+; NativeName - native name of the language
+NativeName=Ελληνικά (Ελλάδας-Κύπρου)
+; AdditionalLocaleIDs
+AdditionalLocaleIDs=el
+; BiDi - values between 0 and 3 accepted
+BiDi=0

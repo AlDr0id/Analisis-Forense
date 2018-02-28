@@ -1,0 +1,16 @@
+﻿; Menu "Plik" > "Otwórz listę..."
+102=Ctrl+O
+; Menu "Plik" > "Zapisz listę..."
+110=Ctrl+Shift+S
+; Menu "Edycja" > "Zaznacz wszystko"
+142=Ctrl+A
+; Menu "Edycja" > "Kopiuj"
+144=Ctrl+C
+; Menu "Szukaj" > "Znajdź"
+162=Ctrl+F
+; Menu "Edycja" > "Wyczyść" > "Digest"
+572=Ctrl+Del
+; Menu "Edycja" > "Wyczyść" > "Comparison digest"
+574=Ctrl+Shift+C
+; Menu "Edycja" > "Wyczyść" > "Wszystko"
+583=Ctrl+Shift+Del

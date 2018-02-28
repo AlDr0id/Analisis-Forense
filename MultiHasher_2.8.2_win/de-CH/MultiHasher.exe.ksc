@@ -1,0 +1,16 @@
+﻿; Menu "Datei" > "Liste öffnen..."
+102=Ctrl+O
+; Menu "Datei" > "Liste speichern..."
+110=Ctrl+Shift+S
+; Menu "Bearbeiten" > "Alle auswählen"
+142=Ctrl+A
+; Menu "Bearbeiten" > "Kopieren"
+144=Ctrl+C
+; Menu "Suchen" > "Suchen"
+162=Ctrl+F
+; Menu "Bearbeiten" > "Löschen" > "Hashwert"
+572=Ctrl+Del
+; Menu "Bearbeiten" > "Löschen" > "Hashwert Vergleich"
+574=Ctrl+Shift+C
+; Menu "Bearbeiten" > "Löschen > "Alles"
+583=Ctrl+Shift+Del

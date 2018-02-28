@@ -1,0 +1,14 @@
+﻿; Menu "File" > "Open list..."
+102=Ctrl+O
+; Menu "Edit" > "Select all"
+142=Ctrl+A
+; Menu "Edit" > "Copy"
+144=Ctrl+C
+; Menu "Search" > "Find"
+162=Ctrl+F
+; Menu "Edit" > "Clear" > "Digest"
+572=Ctrl+Del
+; Menu "Edit" > "Clear" > "Comparison digest"
+574=Ctrl+Shift+C
+; Menu "Edit" > "Clear" > "All"
+583=Ctrl+Shift+Del

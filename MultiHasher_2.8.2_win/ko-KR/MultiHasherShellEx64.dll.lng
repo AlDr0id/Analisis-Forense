@@ -1,0 +1,4 @@
+﻿; "&Calculate hash with MultiHasher"
+101=MultiHasher로 해시 계산(&C)
+; "Calculate file hash with MultiHasher"
+102=MultiHasher로 파일 해시 계산

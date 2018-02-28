@@ -1,0 +1,45 @@
+﻿Software License Agreement
+
+1. Terms and Agreement
+1.1 Your use of abelhadigital.com’s software is subject to the terms of a legal agreement between you and abelhadigital.com. This document explains how the agreement is made up, and sets out some of the terms of that agreement.
+1.2 Unless otherwise agreed in writing with abelhadigital.com, your agreement with abelhadigital.com will always include, at a minimum, the terms and conditions set out in this document. These are referred to below as the “Terms”.
+1.4 The Terms form a legally binding agreement between you and abelhadigital.com in relation to your use of the Software. It is important that you take the time to read them carefully.
+
+2. Accepting the Terms
+2.1 In order to use the Software, you must first agree to the Terms. You may not use the Software if you do not accept the Terms.
+2.2 You can accept the Terms by:
+(A) clicking to accept or agree to the Terms, where this option is made available to you by abelhadigital.com in the user interface; or
+(B) by actually using the Software. In this case, you understand and agree that abelhadigital.com will treat your use of the Sotware as acceptance of the Terms from that point onwards.
+
+3. Language of the Terms
+3.1 Where abelhadigital.com has provided you with a translation of the English language version of the Terms, then you agree that the translation is provided for your convenience only and that the English language versions of the Terms will govern your relationship with abelhadigital.com.
+3.2 If there is any contradiction between what the English language version of the Terms says and what a translation says, then the English language version shall take precedence.
+
+4. License from abelhadigital.com
+4.1 abelhadigital.com gives you a personal, worldwide, royalty-free, non-assignable and non-exclusive license to use the software provided to you by abelhadigital.com. This license is for the sole purpose of enabling you to use and enjoy the benefit of the Software as provided by abelhadigital.com, in the manner permitted by the Terms.
+4.2 Subject to section 1.2, you may not (and you may not permit anyone else to) copy, modify, create a derivative work of, reverse engineer, decompile or otherwise attempt to extract the source code of the Software or any part thereof, unless this is expressly permitted or required by law, or unless you have been specifically told that you may do so by abelhadigital.com, in writing.
+4.3 Subject to section 1.2,  unless abelhadigital.com has given you specific written permission to do so, you may not assign (or grant a sub-license of) your rights to use the Software, grant a security interest in or over your rights to use the Software, or otherwise transfer any part of your rights to use the Software.
+
+5. EXCLUSION OF WARRANTIES
+5.1 NOTHING IN THESE TERMS, INCLUDING SECTIONS 5 AND 6, SHALL EXCLUDE OR LIMIT ABELHADIGITAL.COM’S WARRANTY OR LIABILITY FOR LOSSES WHICH MAY NOT BE LAWFULLY EXCLUDED OR LIMITED BY APPLICABLE LAW. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR CONDITIONS OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR LOSS OR DAMAGE CAUSED BY NEGLIGENCE, BREACH OF CONTRACT OR BREACH OF IMPLIED TERMS, OR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, ONLY THE LIMITATIONS WHICH ARE LAWFUL IN YOUR JURISDICTION WILL APPLY TO YOU AND OUR LIABILITY WILL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+5.2 YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE SERVICES IS AT YOUR SOLE RISK AND THAT THE SERVICES ARE PROVIDED "AS IS" AND “AS AVAILABLE.”
+5.3 IN PARTICULAR, ABELHADIGITAL.COM, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS DO NOT REPRESENT OR WARRANT TO YOU THAT:
+(A) YOUR USE OF THE SOFTWARE WILL MEET YOUR REQUIREMENTS,
+(B) YOUR USE OF THE SOFTWARE WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE FROM ERROR,
+(C) ANY INFORMATION OBTAINED BY YOU AS A RESULT OF YOUR USE OF THE SOFTWARE WILL BE ACCURATE OR RELIABLE, AND
+(D) THAT DEFECTS IN THE OPERATION OR FUNCTIONALITY OF THE SOFTWARE PROVIDED TO YOU WILL BE CORRECTED.
+5.4 NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM ABELHADIGITAL.COM SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THE TERMS.
+5.5 ABELHADIGITAL.COM FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+6. LIMITATION OF LIABILITY
+6.1 SUBJECT TO OVERALL PROVISION IN PARAGRAPH 5.1 ABOVE, YOU EXPRESSLY UNDERSTAND AND AGREE THAT ABELHADIGITAL.COM, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS SHALL NOT BE LIABLE TO YOU FOR:
+(A) ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES WHICH MAY BE INCURRED BY YOU, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY. THIS SHALL INCLUDE, BUT NOT BE LIMITED TO, ANY LOSS OF PROFIT (WHETHER INCURRED DIRECTLY OR INDIRECTLY), ANY LOSS OF GOODWILL OR BUSINESS REPUTATION, ANY LOSS OF DATA SUFFERED, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR OTHER INTANGIBLE LOSS;
+6.2 THE LIMITATIONS ON ABELHADIGITAL.COM’S LIABILITY TO YOU IN PARAGRAPH 6.1 ABOVE SHALL APPLY WHETHER OR NOT ABELHADIGITAL.COM HAS BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.
+
+7. General legal terms
+7.1 The Terms constitute the whole legal agreement between you and abelhadigital.com and govern your use of the Software, and completely replace any prior agreements between you and abelhadigital.com in relation to the Software.
+7.2 You agree that if abelhadigital.com does not exercise or enforce any legal right or remedy which is contained in the Terms (or which abelhadigital.com has the benefit of under any applicable law), this will not be taken to be a formal waiver of abelhadigital.com’s rights and that those rights or remedies will still be available to abelhadigital.com.
+7.3 If any court of law, having the jurisdiction to decide on this matter, rules that any provision of these Terms is invalid, then that provision will be removed from the Terms without affecting the rest of the Terms. The remaining provisions of the Terms will continue to be valid and enforceable.
+7.4 The Terms, and your relationship with abelhadigital.com under the Terms, shall be governed by the laws of Portugal without regard to its conflict of laws provisions. You and abelhadigital.com agree to submit to the exclusive jurisdiction of the courts located in Portugal to resolve any legal matter arising from the Terms. Notwithstanding this, you agree that abelhadigital.com shall still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.
+
+July 22, 2010

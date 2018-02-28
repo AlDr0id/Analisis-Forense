@@ -1,0 +1,8 @@
+﻿; Author = person or group responsible for the translation
+Author=Talyan
+; LanguageName - name of the language in english
+LanguageName=Russian
+; NativeName - native name of the language
+NativeName=Русский
+; BiDi - values between 0 and 3 accepted
+BiDi=0

@@ -1,0 +1,620 @@
+﻿; Menu "Language"
+1=Taal
+
+; Menu "Language" > "Automatic"
+2=Automatisch
+
+; Menu "File"
+101=&Bestand
+
+; Menu "File" > "Open list..."
+102=&Lijst openen...
+
+; Menu "File" > "Calculate"
+103=&Berekenen
+
+; Menu "File" > "Exit"
+104=A&fsluiten
+
+; Menu "File" > "Add"
+105=&Toevoegen
+
+; Menu "File" > "Add" > "Files..."
+106=Bestanden...
+
+; Menu "File" > "Add" > "Folder..."
+107=Map...
+
+; Menu "File" > "Add" > "Path..."
+108=Pad...
+
+; Menu "File" > "Add" > "Process..."
+109=Proces...
+
+; Menu "File" > "Save list..."
+110=&Lijst opslaan...
+
+; Menu "File" > "Hash text string..."
+111=Hash &tekstregel...
+
+; Menu "File" > "Reopen"
+112=&Hervatten
+
+; Menu "File" > "Reopen" > "Empty list..."
+113=Lijst w&issen...
+
+; Menu "Help"
+121=&Help
+
+; Menu "Help" > "%0 Help"
+; %0 = Application name
+122=%0 &Help
+
+; Menu "Help" > "About %0"
+; %0 = Application name
+123=&Over %0
+
+; Menu "Help" > "Report bug"
+124=&Fout rapporteren
+
+; Menu "Help" > "Troubleshooting information"
+125=Probleemoplossing informatie
+
+; Menu "Edit"
+141=B&ewerken
+
+; Menu "Edit" > "Select all"
+142=&Alles selecteren
+
+; Menu "Edit" > "Preferences..."
+143=Opti&es...
+
+; Menu "Edit" > "Copy"
+144=&Kopiëren
+
+; Menu "Edit" > "Select hash algorithms"
+145=&Hash algoritmen selecteren
+
+; Menu "Search"
+161=&Zoeken
+
+; Menu "Search" > "Find"
+162=&Zoeken
+
+; Menu "Search" > "Use regular expression"
+163=Gebruik &reguliere expressie
+
+; Menu "Search" > "Search digests"
+164=Zoek &hash-waarde
+
+; Menu "Search" > "Search online"
+165=Zoek &online
+
+; Menu "View"
+181=Be&eld
+
+; Menu "View" > "Show all"
+182=Alles weergeven
+
+; Menu "View" > "Show invalids"
+183=Ongeldige weergeven
+
+; Menu "View" > "Show errors"
+184=Fouten weergeven
+
+; Menu "Tools"
+201=&Extra
+
+
+
+; About %0
+; %0 = Application name
+301=Over %0
+
+; All rights reserved.
+302=Alle rechten voorbehouden.
+
+; License
+304=Licentie
+
+; Visit website
+305=Bezoek de website
+
+; Report bug
+306=Fout rapporteren
+
+; "Open" dialog title
+307=Openen
+
+; "Open"
+308=&Openen
+
+; "Cancel"
+309=&Annuleren
+
+; "File name:" label in "Open" dialog
+310=Bestandsnaam:
+
+; "All files"
+311=Alle bestanden
+
+; "Translation"
+312=Vertaling
+
+; "Author: %0"
+; %0 = Translation author
+313=Auteur: Gerard
+
+; "Locale: %0"
+; %0 = Locale
+314=Landinstelling: %0
+
+; "Locale ID: %0"
+; %0 = Locale ID (decimal)
+; %1 = Locale ID (hex)
+315=Landinstelling ID: %0 (%1)
+
+; %0 = Name of the language in English
+316=Naam: %0
+
+; "Native name: %0"
+; %0 = Native name of the language
+317=Orginele naam: %0
+
+; "O&K" button
+318=O&K
+
+; "Close"
+319=Sluiten
+
+; "Refresh"
+320=Vernieuwen
+
+; "Select all"
+321=Alles selecteren
+
+; "Select none"
+322=Niets selecteren
+
+; "Add"
+323=Toevoegen
+
+; "Preferences"
+324=Opties
+
+; "< Previous"
+325=< Vorige
+
+; "Next >"
+326=Volgende >
+
+; "Open"
+327=Openen
+
+; "All supported files"
+328=Alle ondersteunde bestanden
+
+; "&Save" button
+329=&Opslaan
+
+; "Save as" dialog title
+330=Opslaan als
+
+; "Associate file types"
+331=Bestandstypen koppelen
+
+; "Remove file associations"
+332=Bestandskoppelingen verwijderen
+
+; "Copy to clipboard"
+333=Naar klembord kopiëren
+
+; "Retry"
+334=Opnieuw
+
+; "Upload"
+335=Uploaden
+
+
+
+
+; "Add files..."
+501=Bestanden toevoegen...
+
+; "Add folder..."
+502=Map toevoegen...
+
+; "Add files"
+503=Bestanden toevoegen
+
+; "Remove"
+504=Verwijderen
+
+; "Remove all"
+505=Alles verwijderen
+
+; "Clear"
+506=Wissen
+
+; "Show in Windows Explorer"
+507=Weergeven in Windows verkenner
+
+; "Calculating... %0 file(s) remaining."
+; %0 = Number of files remaining
+508=Berekenen... %0 bestand(en) resterende.
+
+; "Calculating... %0 %%"
+; %0 = Progress (integer)
+509=Berekenen... %0 %%
+
+; "Calculating... %0 %% [ Paused ]"
+; %0 = Progress (integer)
+510=Berekenen... %0 %% [ Onderbroken ]
+
+; "Queued"
+511=Wachtrij
+
+; "Error"
+513=Fout
+
+; "Error: cannot open file"
+514=Fout: kan bestand niet openen
+
+; "Paused"
+515=Onderbroken
+
+; "Pause"
+516=Pauze
+
+; "%0 file(s)."
+517=%0 bestand(en).
+
+; "Select files"
+518=Bestanden selecteren
+
+; "Calculate"
+519=Berekenen
+
+; "Stop"
+520=Stoppen
+
+; "Canceled"
+521=Geannuleerd
+
+; "Select hash algorithms"
+522=Hash algoritmen selecteren
+
+; "Select folder"
+523=Map selecteren
+
+; "Drag files here or..."
+524=Bestanden hierheen slepen of...
+
+; "Include sub-folders"
+525=Inclusief submappen
+
+; "Skip"
+526=Overslaan
+
+; "Resume"
+527=Hervatten
+
+; "Compare digests..."
+528=Hash-waarden vergelijken...
+
+; "Compare Digests"
+529=Hash-waarden vergelijken
+
+; "Type digest"
+530=Hash-waarde invoeren
+
+; "Add path..."
+531=Pad toevoegen...
+
+; "Add process..."
+532=Proces toevoegen...
+
+; "Process List"
+533=Proces lijst
+
+; "Select one or more processes"
+534=Selecteer een of meer processen
+
+; "Path"
+535=Pad
+
+; "Process ID"
+536=Proces ID
+
+; "Path:"
+537=Pad:
+
+; "Add path"
+538=Pad toevoegen
+
+; "Offset"
+539=Marge
+
+; "Calculate entire file"
+540=Bereken gehele bestand
+
+; "Calculate specified block"
+541=Bereken gespecificeerd blok
+
+; "Block size (in bytes)"
+542=Blokgrootte (in bytes)
+
+; "Basics"
+543=Algemeen
+
+; "Advanced"
+544=Geavanceerd
+
+; "Start calculation immediately after adding files to the queue."
+545=Start berekening onmiddellijk na het toevoegen van bestanden aan de wachtrij.
+
+; "Add folders recursively by default."
+546=Standaard recursief mappen toevoegen.
+
+; "%0 is a service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines."
+; %0 = VirusTotal
+547=%0 is een gratis service die verdachte bestanden en URL's analyseert en een snelle detectie van virussen, wormen en Trojaanse paarden, gedetecteerd door antivirus-engines mogelijk maakt. 
+
+; "API key:"
+548=API sleutel:
+
+; "Query %0"
+; %0 = VirusTotal
+549=Zoekopdracht %0
+
+; "Antivirus"
+550=Antivirus
+
+; "Result"
+551=Resultaat
+
+; "View full report"
+552=Volledig rapport weergeven
+
+; "Report date: %0"
+; %0 = Date and time
+553=Rapport datum: %0
+
+; "Results: %0/%1 (%2%%)"
+; %0 = Total number of positive detections
+; %1 = Total number of antivirus engines
+; %2 = Detection rate in percentage
+554=Resultaten: %0/%1 (%2%%)
+
+; "Connecting..."
+555=Verbinding maken...
+
+; "Downloading report..."
+556=Downloaden van rapport...
+
+; "Parsing report..."
+557=Parseren van rapport...
+
+; "User canceled request."
+558=Gebruiker heeft verzoek geannuleerd.
+
+; "Could not connect to %0."
+; %0 = VirusTotal
+559=Kon geen verbinding maken met %0.
+
+; "Could not parse report."
+560=Kon rapport niet parseren.
+
+: "API key is invalid."
+561=API sleutel is ongeldig.
+
+; "API request rate exceeded."
+562=API verzoekratio overschreden.
+
+; "Hash not found."
+563=Hash niet gevonden.
+
+; "Unable to retrieve report from %0 database."
+; %0 = VirusTotal
+564=Kan rapport niet ophalen uit de %0 databank.
+
+; "View details"
+565=Details weergeven
+
+; "Query %0..."
+566=Zoekopdracht %0...
+
+; "File name"
+567=Bestandsnaam
+
+; "File size"
+568=Bestandsgrootte
+
+; "Block size"
+569=Blokgrootte
+
+; "Block offset"
+570=Blok marge
+
+; "Digests"
+571=Hash-waarden
+
+; "Digest"
+572=Hash-waarde
+
+; "Hash"
+573=Hash
+
+; "Comparison digest"
+574=Hash-waarden vergelijken
+
+; "Unknown"
+575=Onbekend
+
+; "Verify file integrity"
+576=Bestandsintegriteit controleren
+
+; "Use secure connection"
+577=Gebruik beveiligde verbinding
+
+; "Search online..."
+578=Zoek online...
+
+; "%0 files to add."
+; %0 = number of files to add to file queue
+579=%0 bestanden toe te voegen.
+
+; "Updating file queue. This may take a few minutes..."
+580=Bestand wachtrij updaten. Dit kan enkele minuten duren...
+
+; "Search"
+581=Zoeken
+
+; "Show"
+582=Weergeven: 
+
+; "All"
+583=Alles
+
+; "Invalids"
+584=Ongeldige
+
+; "Everything"
+585=Alles
+
+; "No items found."
+586=Geen items gevonden.
+
+; "Errors"
+587=Fouten
+
+; "System Integration"
+588=Systeemintegratie
+
+; "Associate with"
+589=Koppelen met
+
+; "Reading folder content..."
+590=Lezen van mapinhoud...
+
+; "Click here to select hash algorithms"
+591=Hier klikken om hash algoritmen te selecteren
+
+; "No hash algorithms selected"
+592=Geen hash algoritmen geselecteerd
+
+; "Digests match."
+593=Hash-waarden komen overeen.
+
+; "Digests do not match."
+594=Hash-waarden komen niet overeen.
+
+; "Information"
+595=Informatie
+
+; "File version: %0"
+; %0 = Version of the executable
+596=Bestand versie: %0
+
+; "Build time: %0"
+; %0 = Executable's build time
+597=Compilatieversie: %0
+
+; "Text:"
+598=Tekst:
+
+; "Encoding:"
+599=Codering:
+
+; "Hash Text String"
+600=Hash tekstregel
+
+; "Search process"
+601=Proces zoeken
+
+; "Other"
+602=Anders
+
+; "Show in menu bar"
+603=In menubalk weergeven
+
+; "Type digest(s) for comparison"
+604=Hash-waarde(n) voor vergelijken invoeren
+
+; "All (%0)"
+605=Alles (%0)
+
+; "Invalids (%0)"
+606=Ongeldige (%0)
+
+; "Errors (%0)"
+607=Fouten (%0)
+
+; "Error: file not found"
+608=Fout: bestand niet gevonden
+
+; "Add files not found to file queue."
+609=Niet gevonden bestanden aan bestand wachtrij toevoegen.
+
+; "Replace current file queue"
+610=Huidige bestand wachtrij vervangen
+
+; "Select parent folder"
+611=Bovenliggende map selecteren
+
+; "Options"
+612=Opties
+
+; "Add integration into shell context menu"
+614=Integratie toevoegen in context menu
+
+; "Remove integration from shell context menu"
+615=Integratie verwijderen uit context menu
+
+; "Current user only"
+616=Alleen huidige gebruiker
+
+; "Troubleshooting information"
+617=Probleemoplossing informatie
+
+; "Enable single window mode"
+618=Enkel venster modus inschakelen
+
+; "Analysis of the file is in queue. Try again later."
+619=Analyse van het bestand in de wachtrij. Probeer het later opnieuw.
+
+; "Track file queue progress"
+620=Voortgang bestand wachtrij controleren
+
+; "Automatically select all files when calculation finishes"
+621=Selecteert automatisch alle bestanden na de berekening eindigt
+
+; "Are you sure you want to empty the Reopen list?"
+622=Weet u zeker dat u de hervatten lijst wilt wissen?
+
+; "Max. number of items in Reopen menu:"
+623=Max. aantal items in hervatten menu:
+
+; "Canceling..."
+624=Wordt geannuleerd...
+
+; "* %0 is a subsidiary of %1."
+; %0 = VirusTotal
+; %1 = Google
+643=* %0 is een dochteronderneming van %1.
+
+; "Uploading... %0%%"
+; %0 = percentage of file uploaded
+657=Uploaden van... %0%%
+
+; "Upload complete. Opening report..."
+658=Uploaden compleet. Openen van rapport...
+
+; "Waiting for a response..."
+659=Wachten op antwoord...
+
+; "None of the files in the queue were calculated yet."
+660=Er zijn nog geen van de bestanden in de wachtrij berekend.
+
+; "File not found. Do you want to remove the reference from the Reopen list?"
+663=Bestand niet gevonden. Wilt u de referentie van de hervatten lijst verwijderen?

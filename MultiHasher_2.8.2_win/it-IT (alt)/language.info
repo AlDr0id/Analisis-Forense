@@ -1,0 +1,10 @@
+﻿; Author = person or group responsible for the translation
+Author=Gabriele Lanza
+; LanguageName - name of the language in english
+LanguageName=Italian (Italy)
+; NativeName - native name of the language
+NativeName=Italiano (Italia)
+; AdditionalLocaleIDs
+AdditionalLocaleIDs=it
+; BiDi - values between 0 and 3 accepted
+BiDi=0

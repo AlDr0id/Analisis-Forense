@@ -1,0 +1,400 @@
+﻿; Menu "Language"
+1=Язык
+; Menu "Language" > "Automatic"
+2=Авто
+; Menu "File"
+101=&Файл
+; Menu "File" > "Open list..."
+102=&Открыть список...
+; Menu "File" > "Calculate"
+103=&Вычислить
+; Menu "File" > "Exit"
+104=В&ыход
+; Menu "File" > "Add"
+105=&Добавить
+; Menu "File" > "Add" > "Files..."
+106=Файлы...
+; Menu "File" > "Add" > "Folder..."
+107=Папка...
+; Menu "File" > "Add" > "Path..."
+108=Путь...
+; Menu "File" > "Add" > "Process..."
+109=Процесс...
+; Menu "File" > "Save list..."
+110=&Сохранить список...
+; Menu "File" > "Hash text string..."
+111=Хэш &текстовая строка...
+; Menu "File" > "Reopen"
+112=&Снова начать
+; Menu "File" > "Reopen" > "Empty list..."
+113=&Пустой список...
+; Menu "Help"
+121=&Помощь
+; Menu "Help" > "%0 Help"
+; %0 = Application name
+122=%0 &Помощь
+; Menu "Help" > "About %0"
+; %0 = Application name
+123=&О программе %0
+; Menu "Help" > "Report bug"
+124=&Сообщить об ошибке
+; Menu "Help" > "Troubleshooting information"
+125=Поиск и устранение неисправностей информация
+; Menu "Edit"
+141=&Редактировать
+; Menu "Edit" > "Select all"
+142=Выбрать &все
+; Menu "Edit" > "Preferences..."
+143=Пред&почтения...
+; Menu "Edit" > "Copy"
+144=&Копировать
+; Menu "Edit" > "Select hash algorithms"
+145=Выбрать &алгоритмы хэширования
+; Menu "Search"
+161=&Поиск
+; Menu "Search" > "Find"
+162=&Найти
+; Menu "Search" > "Use regular expression"
+163=Использовать &регулярные выражения
+; Menu "View"
+181=&Просмотр
+; Menu "View" > "Show all"
+182=Показкать все
+; Menu "View" > "Show invalids"
+183=Показать инвалидов
+; Menu "View" > "Show errors"
+184=Показать ошибки
+; Menu "Tools"
+201=&Инструменты
+
+; About %0
+; %0 = Application name
+301=О программе %0
+; All rights reserved.
+302=Все права защищены.
+; License
+304=Лицензия
+; Visit website
+305=Посетить веб-сайт
+; Report bug
+306=Сообщить об ошибке
+; "Open" dialog title
+307=Открыть
+; "Open"
+308=&Open
+; "Отмена"
+309=&Cancel
+; "File name:" label in "Open" dialog
+310=Имя файла:
+; "All files"
+311=Все файлы
+; "Translation"
+312=Translation
+; "Author: %0"
+; %0 = Translation author
+313=Автор: %0
+; "Locale: %0"
+; %0 = Locale
+314=Локализация: %0
+; "Locale ID: %0"
+; %0 = Locale ID (decimal)
+; %1 = Locale ID (hex)
+315=ID локализации: %0 (%1)
+; %0 = Name of the language in English
+316=ussian: %0
+; "Native name: %0"
+; %0 = Русский
+317=Native name: %0
+; "O&K" button
+318=O&K
+; "Close"
+319=Закрыть
+; "Refresh"
+320=Обновить
+; "Select all"
+321=Выбрать все
+; "Select none"
+322=Не выбирать
+; "Add"
+323=Добавить
+; "Preferences"
+324=Предпочтения
+; "< Previous"
+325=< Предыдущий
+; "Next >"
+326=Следующий >
+; "Open"
+327=Открыть
+; "All supported files"
+328=Все поддерживаемые файлы
+; "&Save" button
+329=&Сохранить
+; "Save as" dialog title
+330=Сохранить как
+; "Associate file types"
+331=Ассоциированные типы файлов
+; "Remove file associations"
+332=Удалить файл ассоциаций
+; "Copy to clipboard"
+333=Копировать в буфер обмена
+
+; "Add files..."
+501=Добавить файлы...
+; "Add folder..."
+502=Добавмть папку...
+; "Add files"
+503=Добавить файлы
+; "Remove"
+504=Удалить
+; "Remove all"
+505=Удалить все
+; "Clear"
+506=Очистить
+; "Show in Windows Explorer"
+507=Показать в Windows Explorer
+; "Calculating... %0 file(s) remaining."
+; %0 = Number of files remaining
+508=Рассчитать... %0 оставшийся файл(ы).
+; "Calculating... %0 %%"
+; %0 = Progress (integer)
+509=Расчет... %0 %%
+; "Calculating... %0 %% [ Paused ]"
+; %0 = Progress (integer)
+510=Расчет... %0 %% [ Приостановлено ]
+; "Queued"
+511=В очереди
+; "Error"
+513=Ошибка
+; "Error: cannot open file"
+514=Ошибка: не удается открыть файл
+; "Paused"
+515=Приостановлено
+; "Pause"
+516=Пауза
+; "%0 file(s)."
+517=%0 файл(ов).
+; "Select files"
+518=Выбрать файлы
+; "Calculate"
+519=Вычислить
+; "Stop"
+520=Стоп
+; "Canceled"
+521=Отменено
+; "Select hash algorithms"
+522=Выберите алгоритмы хеширования
+; "Select folder"
+523=Выбрать папку
+; "Drag files here or..."
+524=Перетащите сюда файлы или...
+; "Include sub-folders"
+525=Включая подпапки
+; "Skip"
+526=Пропустить
+; "Resume"
+527=Резюме
+; "Compare digests..."
+528=Сравнить обзоры...
+; "Compare Digests"
+529=Сравнить обзоры
+; "Type digest"
+530=Тип обзора
+; "Add path..."
+531=Добавить путь...
+; "Add process..."
+532=Добавить процесс...
+; "Process List"
+533=Список процессов
+; "Select one or more processes"
+534=Выберите один или несколько процессов
+; "Path"
+535=Путь
+; "Process ID"
+536=ID процесса
+; "Path:"
+537=Путь:
+; "Add path"
+538=Добавить путь
+; "Offset"
+539=Сместить
+; "Calculate entire file"
+540=Рассчитать весь файл
+; "Calculate specified block"
+541=Рассчитать указанный блок
+; "Block size (in bytes)"
+542=Размер блока (в байтах)
+; "Basics"
+543=Основной
+; "Advanced"
+544=Расширенный
+; "Start calculation immediately after adding files to the queue."
+545=Начать расчет сразу же после добавления файлов в очередь.
+; "Add folders recursively by default."
+546=Добавить папки рекурсивно по умолчанию.
+; "%0 is a service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware detected by antivirus engines."
+; %0 = VirusTotal
+547=%0 это сервис, который анализирует подозрительные файлы и ссылки и облегчает быстрое обнаружение вирусов, червей, троянов и всех видов вредоносных программ определяемых антивирусами.
+; "API key:"
+548=API ключ:
+; "Query %0"
+; %0 = VirusTotal
+549=Запрос %0
+; "Antivirus"
+550=Антивирус
+; "Result"
+551=Результат
+; "View full report"
+552=Посмотреть полный отчет
+; "Report date: %0"
+; %0 = Date and time
+553=Дата отчета: %0
+; "Results: %0/%1 (%2%%)"
+; %0 = Total number of positive detections
+; %1 = Total number of antivirus engines
+; %2 = Detection rate in percentage
+554=Результаты: %0/%1 (%2%%)
+; "Connecting..."
+555=Подключение...
+; "Downloading report..."
+556=Загрузка отчета...
+; "Parsing report..."
+557=Синтаксический анализ отчет...
+; "User canceled request."
+558=Пользователь отменил запрос.
+; "Could not connect to %0."
+; %0 = VirusTotal
+559=Не удалось подключиться к %0.
+; "Could not parse report."
+560=Не удалось проанализировать отчет.
+: "API key is invalid."
+561=API ключ недействителен.
+; "API request rate exceeded."
+562=Превышена частота запросов API.
+; "Hash not found."
+563=Hash не найден.
+; "Unable to retrieve report from %0 database."
+; %0 = VirusTotal
+564=Не удается получить отчет %0 базы данных.
+; "View details"
+565=Просмотр сведений
+; "Query %0..."
+566=Query %0...
+; "File name"
+567=Имя файла
+; "File size"
+568=Размер файла
+; "Block size"
+569=Размер блока
+; "Block offset"
+570=Смещение блока
+; "Digests"
+571=Краткие обзоры
+; "Digest"
+572=Краткий обзор
+; "Hash"
+573=Хэш
+; "Comparison digest"
+574=Сравнение обзора
+; "Unknown"
+575=Неизвестный
+; "Verify file integrity"
+576=Проверьте целостность файла
+; "Use secure connection"
+577=Использовать безопасное подключение
+; "Search online..."
+578=Поиск в Интернете...
+; "%0 files to add."
+; %0 = number of files to add to file queue
+579=%0 файлы для добавления.
+; "Updating file queue. This may take a few minutes..."
+580=Обновление файла очереди. Это может занять несколько минут ...
+; "Search"
+581=Поиск
+; "Show"
+582=Показать
+; "All"
+583=Все
+; "Invalids"
+584=Инвалиды
+; "Everything"
+585=Все
+; "No items found."
+586=Элементы не найдены.
+; "Errors"
+587=Ошибки
+; "System Integration"
+588=Системная интеграция
+; "Associate with"
+589=Связать с
+; "Reading folder content..."
+590=Чтение содержимого папки...
+; "Click here to select hash algorithms"
+591=Нажмите здесь, чтобы выбрать алгоритмы хеширования
+; "No hash algorithms selected"
+592=Не выбраны алгоритмы хеширования
+; "Digests match."
+593=Матч обзоров.
+; "Digests do not match."
+594=Обзоры не соответствуют.
+; "Information"
+595=Информация
+; "File version: %0"
+; %0 = Version of the executable
+596=Версия файла: %0
+; "Build time: %0"
+; %0 = Executable's build time
+597=Время сборки: %0
+; "Text:"
+598=Текст:
+; "Encoding:"
+599=Кодирование:
+; "Hash Text String"
+600=Текстовая строка хеша
+; "Search process"
+601=Процесс поиска
+; "Other"
+602=Другое
+; "Show in menu bar"
+603=Показать в строке меню
+; "Type digest(s) for comparison"
+604=Тип обзора(ов) для сравнения
+; "All (%0)"
+605=Все (%0)
+; "Invalids (%0)"
+606=Инвалиды (%0)
+; "Errors (%0)"
+607=Ошибки (%0)
+; "Error: file not found"
+608=Ошибка: файл не найден
+; "Add files not found to file queue."
+609=Добавьте файлы, не найденные в очереди файлов.
+; "Replace current file queue"
+610=Заменить текущий файл очереди
+; "Select parent folder"
+611=Выбор родительской папки
+; "Options"
+612=Параметры
+; "* %0 is a service developed by %1."
+; %0 = VirusTotal
+; %1 = Hispasec Sistemas
+613=* %0 услуга разработана %1.
+; "Add integration into shell context menu"
+614=Добавить интеграцию в системное контекстное меню
+; "Remove integration from shell context menu"
+615=Удалить интеграцию с системным контекстным меню
+; "Current user only"
+616=Только для текущего пользователя
+; "Troubleshooting information"
+617=Сведения об устранении неполадок
+; "Enable single window mode"
+618=Включите режим "единого окна"
+; "Analysis of the file is in queue. Try again later."
+619=Анализ файлов в очереди. Попробуйте еще раз позже.
+; "Track file queue progress"
+620=Отслеживание хода выполнения очереди файлов
+; "Automatically select all files when calculation finishes"
+621=Автоматически выбрать все файлы после завершения вычисления
+; "Are you sure you want to empty the Reopen list?"
+622=Вы уверены, что хотите очистить список повторного открытия?
+; "Max. number of items in Reopen menu:"
+623=Макс. количество элементов в меню Открыть повторно:

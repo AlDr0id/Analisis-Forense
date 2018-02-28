@@ -1,0 +1,16 @@
+﻿; Menu "Arquivo" > "Abrir lista..."
+102=Ctrl+A
+; Menu "Arquivo" > "Gravar lista..."
+110=Ctrl+Shift+S
+; Menu "Editar" > "Selecionar tudo"
+142=Ctrl+T
+; Menu "Editar" > "Copiar"
+144=Ctrl+C
+; Menu "Pesquisar" > "Procurar"
+162=Ctrl+P
+; Menu "Editar" > "Limpar" > "Resumo"
+572=Ctrl+Del
+; Menu "Editar" > "Limpar" > "Resumo para comparação"
+574=Ctrl+Shift+C
+; Menu "Editar" > "Limpar" > "Tudo"
+583=Ctrl+Shift+Del

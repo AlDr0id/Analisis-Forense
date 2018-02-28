@@ -1,0 +1,10 @@
+﻿; Author = person or group responsible for the translation
+Author=ENTRADIS GMBH
+; LanguageName - name of the language in english
+LanguageName=German (Switzerland)
+; NativeName - native name of the language
+NativeName=Deutsch (Schweiz)
+; AdditionalLocaleIDs
+AdditionalLocaleIDs=de
+; BiDi - values between 0 and 3 accepted
+BiDi=0
