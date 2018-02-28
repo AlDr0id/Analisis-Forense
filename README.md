@@ -11,3 +11,8 @@ Falta la carpeta WiresharkPortable con todo su contenido (por problemas de tama�
 El enlace para descarga directa es https://1.eu.dl.wireshark.org/win32/WiresharkPortable_2.4.5.paf.exe
 
 Falta también la carpeta de FTK Imager (por la misma razón que la de Wireshark Portable). El enlace es https://accessdata.com/product-download/ftk-imager-version-4.2.0 y al descargarlo y tener la carpeta, cambiad el nombre de "FTK Imager" a "FTKImager" (Quitando el espacio vamos)
+
+
+**PARA HACER**
+Añadir seguramente una pausa entre cada instrucción para poder ir viendo poco a poco el desarrollo y llevar un mejor control
+Lo más importante: probarlo
