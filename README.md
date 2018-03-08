@@ -12,7 +12,17 @@ El enlace para descarga directa es https://1.eu.dl.wireshark.org/win32/Wireshark
 
 Falta también la carpeta de FTK Imager (por la misma razón que la de Wireshark Portable). El enlace es https://accessdata.com/product-download/ftk-imager-version-4.2.0 y al descargarlo y tener la carpeta, cambiad el nombre de "FTK Imager" a "FTKImager" (Quitando el espacio vamos)
 
+**UPDATE 08/03/2018**
+Se ha realizado la primera prueba en Windows 10
+Se ha añadido un "pause" entre cada acción para poder llevar un mayor control de las acciones.
+Se ha añadido una variable "disco" al principio, que debe ser reemplazada con la letra del disco que corresponda al pendrive o disco duro en el que se lleve el kit.
+Esta variable disco sirve para redirigir la salida de los comandos, que al ejecutarse como administrador por defecto iba a Windows\System32.
 
 **PARA HACER**<br>
-Añadir seguramente una pausa entre cada instrucción para poder ir viendo poco a poco el desarrollo y llevar un mejor control
-Lo más importante: probarlo
+Añadir hostname a raw de memoria para copiarlo tras volcarlo
+RegFileExport.exe falla
+Exportar clave de registro de Windows Active Center falla
+Exportar clave de registro de  Programas alguna vez ejecutados en la maquina falla
+Exportar clave de registro de Ultimas apps utilizadas falla
+Revisar el volcado de portapapeles
+ntfswalk sin licencia
